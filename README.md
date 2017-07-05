@@ -5,8 +5,8 @@ Things to do
 
 July 5, 2017
 
-x Set up git
-x Set up python
+* Set up git
+* Set up python
 
 
 Backlog
@@ -27,7 +27,7 @@ Line 92: Add the following tag
 ```
 <!----Table Description----> 
 <br>
-<div>Table Description Here</div>
+<div><strong>Description: </strong> {Insert description here from csv source}</div>
 <br>
 <!----Table Description---->
 ```
