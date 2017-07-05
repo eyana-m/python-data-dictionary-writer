@@ -24,16 +24,18 @@ HTML
 
 Line 92: Add the following tag
 
+```
 <!----Table Description----> 
 <br>
 <div>Table Description Here</div>
 <br>
 <!----Table Description---->
+```
 
 
-Line 40
+Line 40: Add `checked` for comments
 
-Add `checked` for comments
-
+```
 <label for='showComments'><input type=checkbox checked id='showComments'>Comments</label>
+```
 
