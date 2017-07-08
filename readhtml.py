@@ -1,4 +1,3 @@
-##First Commit
 
 from bs4 import BeautifulSoup
 
@@ -11,10 +10,18 @@ from bs4 import BeautifulSoup
 #soup.body.append(new_tag)
 #print(soup.title)
 
-with open("tables/cfg_billing_id.html") as inf:
+with open("Data/settlement/tables/cfg_billing_id.html") as inf:
     txt = inf.read()
     soup = BeautifulSoup(txt, 'html.parser')
 
 ###print(soup.find_all('table'))
 
-print(soup.name)
+###print(soup.prettify())
+###print(soup.find_all('a'))
+
+head_tag = soup.head
+
+print(soup.head.children)
+
+for child in head_tag.descendants:
+    print(child)

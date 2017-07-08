@@ -12,7 +12,7 @@ July 5, 2017
 Backlog
 
 1. Google Apps Scripts - Export Tables Masterlist to CSV
-2. Python 
+2. Python
 - Read Html Files from SchemaSpy folder
 - Read CSV file from Google sheets
 - Write HTML in HTML Files based on CSV content
@@ -25,7 +25,7 @@ HTML
 Line 92: Add the following tag
 
 ```
-<!----Table Description----> 
+<!----Table Description---->
 <br>
 <div><strong>Description: </strong> {Insert description here from csv source}</div>
 <br>
@@ -38,4 +38,3 @@ Line 40: Add `checked` for comments
 ```
 <label for='showComments'><input type=checkbox checked id='showComments'>Comments</label>
 ```
-
