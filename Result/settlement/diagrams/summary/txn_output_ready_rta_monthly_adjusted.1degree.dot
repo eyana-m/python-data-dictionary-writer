@@ -1,0 +1,49 @@
+// dot 2.36.0 on Mac OS X 10.12.5
+// SchemaSpy rev 590
+digraph "txn_output_ready_rta_monthly_adjusted" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "txn_output_ready_rta_monthly_adjusted" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">txn_output_ready_rta_monthly_adjusted</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="created_by" COLSPAN="3" ALIGN="LEFT">created_by</TD></TR>
+      <TR><TD PORT="created_date" COLSPAN="3" ALIGN="LEFT">created_date</TD></TR>
+      <TR><TD PORT="modified_by" COLSPAN="3" ALIGN="LEFT">modified_by</TD></TR>
+      <TR><TD PORT="modified_date" COLSPAN="3" ALIGN="LEFT">modified_date</TD></TR>
+      <TR><TD PORT="version" COLSPAN="3" ALIGN="LEFT">version</TD></TR>
+      <TR><TD PORT="group_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">group_id</TD></TR>
+      <TR><TD PORT="job_id" COLSPAN="3" ALIGN="LEFT">job_id</TD></TR>
+      <TR><TD PORT="run_date" COLSPAN="3" ALIGN="LEFT">run_date</TD></TR>
+      <TR><TD PORT="billing_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">billing_id</TD></TR>
+      <TR><TD PORT="dispatch_interval" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dispatch_interval</TD></TR>
+      <TR><TD PORT="frdp" COLSPAN="3" ALIGN="LEFT">frdp</TD></TR>
+      <TR><TD PORT="mtn" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mtn</TD></TR>
+      <TR><TD PORT="rbcq" COLSPAN="3" ALIGN="LEFT">rbcq</TD></TR>
+      <TR><TD PORT="rds" COLSPAN="3" ALIGN="LEFT">rds</TD></TR>
+      <TR><TD PORT="region" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">region</TD></TR>
+      <TR><TD PORT="reserve_category" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">reserve_category</TD></TR>
+      <TR><TD PORT="rsq" COLSPAN="3" ALIGN="LEFT">rsq</TD></TR>
+      <TR><TD PORT="rta" COLSPAN="3" ALIGN="LEFT">rta</TD></TR>
+      <TR><TD PORT="zero_rated" COLSPAN="3" ALIGN="LEFT">zero_rated</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/txn_output_ready_rta_monthly_adjusted.html"
+    tooltip="txn_output_ready_rta_monthly_adjusted"
+  ];
+}
