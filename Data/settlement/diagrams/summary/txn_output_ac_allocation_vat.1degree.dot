@@ -1,0 +1,58 @@
+// dot 2.36.0 on Mac OS X 10.12.5
+// SchemaSpy rev 590
+digraph "txn_output_ac_allocation_vat" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "txn_output_ac_allocation_vat" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">txn_output_ac_allocation_vat</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="created_by" COLSPAN="3" ALIGN="LEFT">created_by</TD></TR>
+      <TR><TD PORT="created_date" COLSPAN="3" ALIGN="LEFT">created_date</TD></TR>
+      <TR><TD PORT="modified_by" COLSPAN="3" ALIGN="LEFT">modified_by</TD></TR>
+      <TR><TD PORT="modified_date" COLSPAN="3" ALIGN="LEFT">modified_date</TD></TR>
+      <TR><TD PORT="version" COLSPAN="3" ALIGN="LEFT">version</TD></TR>
+      <TR><TD PORT="ac_group_id" COLSPAN="3" ALIGN="LEFT">ac_group_id</TD></TR>
+      <TR><TD PORT="ac_job_id" COLSPAN="3" ALIGN="LEFT">ac_job_id</TD></TR>
+      <TR><TD PORT="approved_rate" COLSPAN="3" ALIGN="LEFT">approved_rate</TD></TR>
+      <TR><TD PORT="billing_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">billing_id</TD></TR>
+      <TR><TD PORT="billing_period_end" COLSPAN="3" ALIGN="LEFT">billing_period_end</TD></TR>
+      <TR><TD PORT="billing_period_start" COLSPAN="3" ALIGN="LEFT">billing_period_start</TD></TR>
+      <TR><TD PORT="group_id" COLSPAN="3" ALIGN="LEFT">group_id</TD></TR>
+      <TR><TD PORT="job_id" COLSPAN="3" ALIGN="LEFT">job_id</TD></TR>
+      <TR><TD PORT="pricing_condition" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">pricing_condition</TD></TR>
+      <TR><TD PORT="run_date" COLSPAN="3" ALIGN="LEFT">run_date</TD></TR>
+      <TR><TD PORT="virtual_id" COLSPAN="3" ALIGN="LEFT">virtual_id</TD></TR>
+      <TR><TD PORT="ac_amount" COLSPAN="3" ALIGN="LEFT">ac_amount</TD></TR>
+      <TR><TD PORT="ac_mtn" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ac_mtn</TD></TR>
+      <TR><TD PORT="allocation_amount" COLSPAN="3" ALIGN="LEFT">allocation_amount</TD></TR>
+      <TR><TD PORT="bcq" COLSPAN="3" ALIGN="LEFT">bcq</TD></TR>
+      <TR><TD PORT="bilateral_adj_amt" COLSPAN="3" ALIGN="LEFT">bilateral_adj_amt</TD></TR>
+      <TR><TD PORT="dispatch_interval" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dispatch_interval</TD></TR>
+      <TR><TD PORT="facility_type" COLSPAN="3" ALIGN="LEFT">facility_type</TD></TR>
+      <TR><TD PORT="gesq" COLSPAN="3" ALIGN="LEFT">gesq</TD></TR>
+      <TR><TD PORT="gta" COLSPAN="3" ALIGN="LEFT">gta</TD></TR>
+      <TR><TD PORT="spot_qty" COLSPAN="3" ALIGN="LEFT">spot_qty</TD></TR>
+      <TR><TD PORT="tta" COLSPAN="3" ALIGN="LEFT">tta</TD></TR>
+      <TR><TD PORT="zero_rated" COLSPAN="3" ALIGN="LEFT">zero_rated</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/txn_output_ac_allocation_vat.html"
+    tooltip="txn_output_ac_allocation_vat"
+  ];
+}
