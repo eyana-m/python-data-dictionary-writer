@@ -1,4 +1,4 @@
-
+import os
 from bs4 import BeautifulSoup
 
 # create new link
@@ -10,10 +10,11 @@ from bs4 import BeautifulSoup
 #soup.body.append(new_tag)
 #print(soup.title)
 
+base=os.path.basename("Data/settlement/tables/cfg_billing_id.html")
 
+print(base)
 
-
-with open("Data/settlement/tables/cfg_billing_id.html") as inf:
+with open("Data/settlement/tables/"+base) as inf:
     txt = inf.read()
     soup = BeautifulSoup(txt, 'html.parser')
 
@@ -23,28 +24,18 @@ table_description_text = """
 <!---Table Description--->"""
 
 extraSoup = BeautifulSoup(table_description_text, 'html.parser')
-###print(soup.find_all('table'))
 
-###print(soup.prettify())
-###print(soup.find_all('a'))
 
 head_tag = soup.head
 
 tables = soup.find_all('table')
 data_table = tables[5]
 
-# print(soup.head.children)
-# print(len(tables))
 print(tables[5])
 
 data_table.insert_before(extraSoup)
 
 print soup
 
-with open("Result/settlement/tables/output1.html", "w") as file:
+with open("Result/settlement/tables/"+base, "w") as file:
     file.write(str(soup))
-
-# count = 0
-# for table in tables:
-#     print count, ":", table, "\n"
-#     count = count + 1;
