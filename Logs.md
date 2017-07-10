@@ -14,10 +14,17 @@ July 8, 2017
 
 Learning
 
-soup.prettify() - displays  
-soup.title - displays the title tag and contents  
-soup.contents - displays first layer of contents, no children  
-soup.children - displays children  
+soup.prettify() - displays html code  
+soup.title - displays the title tag and contents    
+soup.contents - displays first layer of contents, no children    
+soup.children - displays children     
+
+July 10, 2017
+
+* `Writetabledescription.py` completed
+*  Next Agenda: Write table description in `index.html`
+
+
 
 Helpful Links:
 

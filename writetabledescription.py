@@ -50,5 +50,5 @@ for path in pathlist:
     writeToHTML(path_in_str)
 
 print "---------------------------------------------------------------"
-print "Job completed. Check results folder."
-print "----------------------------------------------------------------"
+print "All tables. Check results folder."
+print "---------------------------------------------------------------"
