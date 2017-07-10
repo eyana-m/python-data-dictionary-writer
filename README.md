@@ -20,8 +20,15 @@ This mini- project involves the following activities:
 
 Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blob/master/Logs.md)!
 
+### Steps in running the script:
 
-### HTML Customizations
+1. Export the table Masterlist in CSV. The masterlist can be found in Google Sheets.
+2. Download or clone the repository.
+3. Ensure that the **Data** folder contains the source files.
+4. Run `python writetabledescription.py` in terminal.
+5. Check the resulting files in **Result** folder.
+
+### HTML Customizations:
 
 `Done` - Line 92: Add the following tag
 
