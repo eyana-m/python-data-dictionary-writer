@@ -14,10 +14,10 @@ July 8, 2017
 
 Learning
 
-soup.prettify() - displays
-soup.title - displays the title tag and contents
-soup.contents - displays first layer of contents, no children
-soup.children - displays children
+soup.prettify() - displays  
+soup.title - displays the title tag and contents  
+soup.contents - displays first layer of contents, no children  
+soup.children - displays children  
 
 Helpful Links:
 
