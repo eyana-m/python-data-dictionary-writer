@@ -8,7 +8,7 @@ def openCSV(table):
         for row in reader:
             if row[0] == table:
                 return row[1]
-            break;
+                break;
 print "--------------------------------------------"
 print "Writing to SchemaSpy Data Dictionary..."
 print "--------------------------------------------"
@@ -19,10 +19,12 @@ with open("Data/settlement/tables/"+base) as inf:
     txt = inf.read()
     soup = BeautifulSoup(txt, 'html.parser')
 
+description = openCSV(os.path.splitext(base)[0])
+
 table_description_text = """
 <!---Table Description--->
-<br> <div><strong>Description: </strong> {Insert description here from csv source}</div> <br></br>
-<!---Table Description--->"""
+<br> <div><strong>Description: </strong> %s </div> <br></br>
+<!---Table Description--->""" % (description)
 
 extraSoup = BeautifulSoup(table_description_text, 'html.parser')
 
