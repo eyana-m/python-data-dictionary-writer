@@ -26,15 +26,5 @@ July 10, 2017
    * Write table description in `index.html`
    * Auto-open comment column
    * Write field descriptions easily:
-      # Export fields
-      # Import fields with description. Attach to html.
-
-
-
-Helpful Links:
-
-1. [Inserting HTML String into BS4 Object](https://stackoverflow.com/questions/31229981/insert-html-string-into-beautifulsoup-object)
-
-2. [Getting the filename dynamically](https://stackoverflow.com/questions/678236/how-to-get-the-filename-without-the-extension-from-a-path-in-python)
-
-3. [Looping directory using python]( https://stackoverflow.com/questions/10377998/how-can-i-iterate-over-files-in-a-given-directory)
+      * Export fields
+      () Import fields with description. Attach to html.
