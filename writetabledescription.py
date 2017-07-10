@@ -1,6 +1,7 @@
 import os
 import csv
 from bs4 import BeautifulSoup
+from pathlib import Path
 
 def openCSV(table):
     with open("../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv", "rb") as f:
@@ -9,36 +10,45 @@ def openCSV(table):
             if row[0] == table:
                 return row[1]
                 break;
-print "--------------------------------------------"
-print "Writing to SchemaSpy Data Dictionary..."
-print "--------------------------------------------"
-
-base=os.path.basename("Data/settlement/tables/cfg_billing_id.html")
-
-with open("Data/settlement/tables/"+base) as inf:
-    txt = inf.read()
-    soup = BeautifulSoup(txt, 'html.parser')
-
-description = openCSV(os.path.splitext(base)[0])
-
-table_description_text = """
-<!---Table Description--->
-<br> <div><strong>Description: </strong> %s </div> <br></br>
-<!---Table Description--->""" % (description)
-
-extraSoup = BeautifulSoup(table_description_text, 'html.parser')
 
 
-head_tag = soup.head
+def writeToHTML(path):
+    base=os.path.basename(path)
+    with open(path) as inf:
+        txt = inf.read()
+        soup = BeautifulSoup(txt, 'html.parser')
 
-tables = soup.find_all('table')
-data_table = tables[5]
+    description = openCSV(os.path.splitext(base)[0])
 
-print(tables[5])
+    table_description_text = """
+    <!---Table Description--->
+    <br> <div><strong>Description: </strong> %s </div> <br></br>
+    <!---Table Description--->""" % (description)
 
-data_table.insert_before(extraSoup)
+    extraSoup = BeautifulSoup(table_description_text, 'html.parser')
 
-print soup
+    head_tag = soup.head
+    tables = soup.find_all('table')
+    data_table = tables[5]
+    data_table.insert_before(extraSoup)
 
-with open("Result/settlement/tables/"+base, "w") as file:
-    file.write(str(soup))
+    with open("Result/settlement/tables/"+base, "w") as file:
+        file.write(str(soup))
+
+    print "Done writing to %s..." % (base)
+
+
+print "-----------------------------------------------------------"
+print "Writing Table Descriptions to SchemaSpy Data Dictionary..."
+print "-----------------------------------------------------------"
+
+source = "Data/settlement/tables"
+
+pathlist = Path(source).glob('**/*.html')
+for path in pathlist:
+    path_in_str = str(path)
+    writeToHTML(path_in_str)
+
+print "---------------------------------------------------------------"
+print "Job completed. Check results folder."
+print "----------------------------------------------------------------"
