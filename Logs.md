@@ -22,7 +22,12 @@ soup.children - displays children
 July 10, 2017
 
 * `Writetabledescription.py` completed
-*  Next Agenda: Write table description in `index.html`
+*  Next Agenda:
+   * Write table description in `index.html`
+   * Auto-open comment column
+   * Write field descriptions easily:
+      # Export fields
+      # Import fields with description. Attach to html.
 
 
 
