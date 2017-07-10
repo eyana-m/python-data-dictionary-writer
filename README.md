@@ -1,8 +1,9 @@
 # Python Data Dictionary Writer
 Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
-### Why did I write this script
-I work in software development. Too busy (and lazy) to manually copy and paste descriptions of 144 tables to their respective HTML files
+### Why did I write this script?
+* I need to create a data dictionary that is useful and informative to the client, but...
+* Too busy (and lazy) to manually copy and paste descriptions of 144 tables to their respective HTML files.
 
 ### What can this script do?
 
@@ -17,8 +18,10 @@ This mini- project involves the following activities:
 3. HTML Files
 - Design table description in HTML
 
+Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blob/master/Logs.md)!
 
-### HTML Modification
+
+### HTML Customizations
 
 `Done` - Line 92: Add the following tag
 
@@ -38,10 +41,10 @@ This mini- project involves the following activities:
 
 ### Libraries used:
 
-1. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
+1. [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
 2. [Pathlib](https://docs.python.org/3/library/pathlib.html)
 
-#### Resources:
+### Resources:
 
 1. [Inserting HTML String into BS4 Object](https://stackoverflow.com/questions/31229981/insert-html-string-into-beautifulsoup-object)
 
