@@ -26,7 +26,7 @@ def writeToCSV(fields, base):
     basename = os.path.splitext(base)[0]
     basename_csv_file = basename+".csv"
     with open("Result/settlement_csv/"+basename_csv_file, "w") as csv_file:
-        writer = csv.writer(csv_file)
+        writer = csv.writer(csv_file,delimiter="|")
         writer.writerow(["Field","Description"])
         for field in fields:
             writer.writerow([field, ""])

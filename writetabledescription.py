@@ -3,7 +3,7 @@ import csv
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-def openCSV(table):
+def getTableDescription(table):
     with open("../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv", "rb") as f:
         reader = csv.reader(f)
         for row in reader:
@@ -18,7 +18,7 @@ def writeToHTML(path):
         txt = inf.read()
         soup = BeautifulSoup(txt, 'html.parser')
 
-    description = openCSV(os.path.splitext(base)[0])
+    description = getTableDescription(os.path.splitext(base)[0])
 
     table_description_text = """
     <!---Table Description--->

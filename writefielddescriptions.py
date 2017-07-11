@@ -5,7 +5,7 @@ from pathlib import Path
 
 def getDescription(field,basename):
     with open("Result/settlement_csv/"+basename+".csv", "rb") as f:
-        reader = csv.reader(f)
+        reader = csv.reader(f,delimiter="|")
         for row in reader:
             if row[0]==field:
                 return row[1]
@@ -18,11 +18,13 @@ def writeToHTML(path):
         txt = inf.read()
         soup = BeautifulSoup(txt, 'html.parser')
 
+    #Auto-open comments-section
+    inputs = soup.find_all('input', {"id": "showComments"})
+    inputs[0]['checked'] = "true"
+
     tables = soup.find_all('table')
     data_table = tables[5]
-
     table = data_table.find('tbody')
-
     rows = table.find_all('tr')
 
 
@@ -44,7 +46,8 @@ print "Writing Field Descriptions to SchemaSpy Data Dictionary"
 print "-----------------------------------------------------------"
 
 
-source = "Data/settlement/tables/"
+#This must be changed
+source = "Result/settlement/tables/"
 
 #pathlist = Path(source).glob('**/*.html')
 
