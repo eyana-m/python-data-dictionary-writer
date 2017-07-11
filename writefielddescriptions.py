@@ -3,8 +3,8 @@ import csv
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-def getDescription(field):
-    with open("Result/settlement_csv/cfg_billing_id.csv", "rb") as f:
+def getDescription(field,basename):
+    with open("Result/settlement_csv/"+basename+".csv", "rb") as f:
         reader = csv.reader(f)
         for row in reader:
             if row[0]==field:
@@ -13,6 +13,7 @@ def getDescription(field):
 
 def writeToHTML(path):
     base=os.path.basename(path)
+    basename = os.path.splitext(base)[0]
     with open(path) as inf:
         txt = inf.read()
         soup = BeautifulSoup(txt, 'html.parser')
@@ -27,15 +28,34 @@ def writeToHTML(path):
 
     for row in rows:
         field = row.contents[1].string
+        description = getDescription(field,basename)
         comment_section = row.find_all("td", class_="comment detail")
         for r in comment_section:
-            r.string = getDescription(field)
-            # print r
+             r.string = description
 
-    with open("Result/settlement_field_descriptions/tables/"+base, "w") as file:
+        with open("Result/settlement_field_descriptions/tables/"+base, "w") as file:
             file.write(str(soup))
 
+    print "Done writing field description for %s"%(base)
 
-path_to_str="Data/settlement/tables/cfg_billing_id.html"
 
-writeToHTML(path_to_str)
+print "-----------------------------------------------------------"
+print "Writing Field Descriptions to SchemaSpy Data Dictionary"
+print "-----------------------------------------------------------"
+
+
+source = "Data/settlement/tables/"
+
+#pathlist = Path(source).glob('**/*.html')
+
+pathlist = ['cfg_billing_id', 'cfg_charge_id']
+for path in pathlist:
+    #path_in_str = str(path)
+    path_in_str = source+path+".html"
+    base=os.path.basename(path_in_str)
+    writeToHTML(path_in_str)
+
+
+print "--------------------------------------------------------------------------"
+print "Wrote all field descriptions of all settlement tables. Check results folder."
+print "---------------------------------------------------------------------------"

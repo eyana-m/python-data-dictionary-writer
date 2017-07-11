@@ -5,7 +5,7 @@ created_date,
 modified_by,
 modified_date,
 version,
-charge_id,
-charge_id_label,
+charge_id, "Identification for each settlement or billing calculation. Used in AMS INV and MF files."
+charge_id_label, "Full name of charge IDs."
 effective_end_date,
 effective_start_date,
