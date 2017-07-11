@@ -1,0 +1,13 @@
+Field,Description
+id,
+created_by,
+created_date,
+modified_by,
+modified_date,
+version,
+ac_group_id,
+billing_id,
+billing_period_end,
+billing_period_start,
+run_date,
+vat,

@@ -1,0 +1,11 @@
+Field,Description
+id,
+created_by,
+created_date,
+modified_by,
+modified_date,
+version,
+due_date_interval_days,
+effective_end_date,
+effective_start_date,
+num_of_installments,

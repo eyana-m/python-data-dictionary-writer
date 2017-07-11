@@ -1,0 +1,12 @@
+Field,Description
+group_id,
+adj_run_created_date,
+billing_period_end,
+billing_period_id,
+billing_period_start,
+inv_generated,
+mf_generated,
+mru_installments,
+parent_job,
+run_id,
+sp_generated,

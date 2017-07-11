@@ -1,0 +1,11 @@
+Field,Description
+billing_id,
+billing_period_end,
+billing_period_start,
+payment_num,
+created_by,
+created_date,
+modified_by,
+modified_date,
+version,
+delta_vat_installment,
