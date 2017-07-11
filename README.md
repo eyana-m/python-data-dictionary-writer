@@ -1,5 +1,8 @@
 # Python Data Dictionary Writer
-Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
+Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages using Python scripts
+
+
+
 
 ### Why did I write this script?
 * I need to create a data dictionary that is useful and informative to the client, but...
