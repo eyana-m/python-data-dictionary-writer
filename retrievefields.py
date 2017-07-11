@@ -9,7 +9,6 @@ def retrieveFields(path):
         txt = inf.read()
         soup = BeautifulSoup(txt, 'html.parser')
 
-    head_tag = soup.head
     tables = soup.find_all('table')
     data_table = tables[5]
 

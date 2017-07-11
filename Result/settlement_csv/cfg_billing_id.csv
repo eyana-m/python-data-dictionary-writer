@@ -1,19 +1,19 @@
 Field,Description
 id,
-,
+None,
 created_by,
 created_date,
 modified_by,
 modified_date,
 version,
-billing_id,
-direct_participant,
+billing_id, Identification number used by BSMD to identify direct participants billable to WESM
+direct_participant, Name of the direct participant who owns the billing ID
 effective_end_date,
 effective_start_date,
-renewable,
-tp_address,
-tp_short_name,
-trading_participant,
-virtual_id,
-withholding_tax,
-zero_rated,
+renewable, Determines non-renewable and renewable generators. Used in GMR/VAT.
+tp_address, Address of trading participant
+tp_short_name, Short name of the trading participant (could be direct or indirect)
+trading_participant, Full name of the trading participant (could be direct or indirect)
+virtual_id, Identification number of direct participants in CRSS registration
+withholding_tax, Determines generators with or without withholding tax. Used in GMR/VAT.
+zero_rated, Determines vatable and non-vatable participants. Used in GMR/VAT.

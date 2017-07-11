@@ -58,3 +58,9 @@ Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blo
 2. [Getting the filename dynamically](https://stackoverflow.com/questions/678236/how-to-get-the-filename-without-the-extension-from-a-path-in-python)
 
 3. [Looping directory using python]( https://stackoverflow.com/questions/10377998/how-can-i-iterate-over-files-in-a-given-directory)
+
+4. [Writing CSV using Python](https://stackoverflow.com/questions/14037540/writing-a-python-list-of-lists-to-a-csv-file)
+
+5. [Finding html element by class](https://stackoverflow.com/questions/5041008/how-to-find-elements-by-class)
+
+6. [Writing to BS4 Find object](https://stackoverflow.com/questions/17610438/beautifulsoup-insert-text-var-into-every-given-td-class)
