@@ -5,12 +5,12 @@ created_date|
 modified_by|
 modified_date|
 version|
-group_id|
+group_id| id of the settlement run with adjustment versioning
 job_id|
 run_date|
-billing_id|
-billing_period_end|
-billing_period_start|
-amount|
-charge_id|
-quantity|
+billing_id| billing id involved
+billing_period_end| start of billing period
+billing_period_start| end of billing period
+amount| amount associated with the charge id
+charge_id| TAX, AP, SEC, MRU 
+quantity| adjusted settlement quantity

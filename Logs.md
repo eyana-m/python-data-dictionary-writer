@@ -67,4 +67,9 @@ To do:
 * Add warning: "This job will overwrite the existing folder. Are you sure you want to proceed?"
 * Add descriptions in `index.html` dynamically
 * Fix gitignore 
+* universal field description for field 
+
+-- get unique fields. 
+-- define each unique field
+-- write in all html files with fields
 

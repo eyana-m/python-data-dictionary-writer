@@ -5,15 +5,15 @@ created_date|
 modified_by|
 modified_date|
 version|
-ac_group_id|
+ac_group_id| 
 ac_job_id|
 approved_rate|
 billing_id|
 billing_period_end|
 billing_period_start|
-group_id|
+group_id| 
 job_id|
-pricing_condition|
+pricing_condition| ap, mru, sec
 run_date|
 virtual_id|
 ac_amount|
@@ -22,9 +22,9 @@ allocation_amount|
 bcq|
 bilateral_adj_amt|
 dispatch_interval|
-facility_type|
+facility_type| gen or load
 gesq|
-gta|
+gta| gross trading amount
 spot_qty|
 tta|
 zero_rated|

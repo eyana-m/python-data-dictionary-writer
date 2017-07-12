@@ -1,5 +1,6 @@
 .tar.gz
 
-/Result/settlement
+/Result/settlement/*
+/Result/settlement_table_desc
 /beautifulsoup4-4.6.0
 /Dump

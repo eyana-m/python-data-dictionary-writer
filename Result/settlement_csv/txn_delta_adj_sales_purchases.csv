@@ -8,16 +8,16 @@ version|
 group_id|
 job_id|
 run_date|
-billing_id|
-billing_period_end|
-billing_period_start|
-gmr|
-tta|
-vat_on_purchases|
-vat_on_sales|
-vatable_purchases|
-vatable_sales|
-withholding_tax_amt|
-zero_rated_ecozone|
-zero_rated_purchases|
-zero_rated_sales|
+billing_id| billing id involved
+billing_period_end| start of billing period
+billing_period_start| end of billing period
+gmr| generation mix ratio
+tta| total trading amount
+vat_on_purchases| vat on purchases
+vat_on_sales| vat on sales
+vatable_purchases| vatable purchases
+vatable_sales| vatable sales
+withholding_tax_amt| withholding tax amount
+zero_rated_ecozone| zero-rated ecozone
+zero_rated_purchases| zero-rated purchases 
+zero_rated_sales| zero-rated sales 

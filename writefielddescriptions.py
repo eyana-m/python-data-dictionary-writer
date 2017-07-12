@@ -65,13 +65,11 @@ source = "Result/settlement_table_desc/tables/"
 
 pathlist = Path(source).glob('**/*.html')
 count = 0;
-total = 0;
 for path in pathlist:
 
     path_in_str = str(path)
     base=os.path.basename(path_in_str)
     basename = os.path.splitext(base)[0]
-
 
     if  isCompleteDescription(basename) == True:
         writeToHTML(path_in_str)
@@ -79,13 +77,7 @@ for path in pathlist:
     else:
         continue
 
-    total = total + 1
-
-
-
-
-
 
 print "---------------------------------------------------"
-print "Job completed for %i out of %i tables. Check results folder." %(count, total)
+print "Job completed for %i tables. Check results folder." %(count)
 print "---------------------------------------------------"
