@@ -5,9 +5,9 @@ created_date|
 modified_by|
 modified_date|
 version|
-amount|
+amount| Market Fee Budget
 effective_end_date|
 effective_start_date|
-energy|
-market_fee_mode|
-reserves|
+energy| Rate for Energy Market Fees
+market_fee_mode| Budget or Mode
+reserves| Rate for Reserve Market Fees

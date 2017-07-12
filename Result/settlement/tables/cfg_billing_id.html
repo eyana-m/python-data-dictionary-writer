@@ -38,7 +38,7 @@
 <form action="" name="options">
 <label for="showRelatedCols"><input id="showRelatedCols" type="checkbox"/>Related columns</label>
 <label for="showConstNames"><input id="showConstNames" type="checkbox"/>Constraints</label>
-<label for="showComments"><input id="showComments" type="checkbox"/>Comments</label>
+<label for="showComments"><input checked="true" id="showComments" type="checkbox"/>Comments</label>
 <label for="showLegend"><input checked="" id="showLegend" type="checkbox"/>Legend</label>
 </form>
 </td><td align="right" class="container" rowspan="2" valign="top">
@@ -77,7 +77,6 @@ google_color_text = "000000";
  
 </td><tr valign="top"><td align="left" class="container" valign="top">
 <a name="columns"></a>
-
 <!---Table Description--->
 <br/> <div><strong>Description: </strong> Contains all settlement billing IDs with corresponding registration and tax configurations. </div> <br/>
 <!---Table Description---><table border="1" class="dataTable" id="columns" rules="groups">
@@ -188,7 +187,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Identification number used by BSMD to identify direct participants billable to WESM</td>
 </tr>
 <tr class="even">
 <td class="detail">direct_participant</td>
@@ -199,7 +198,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Name of the direct participant who owns the billing ID</td>
 </tr>
 <tr class="odd">
 <td class="detail">effective_end_date</td>
@@ -232,7 +231,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Determines non-renewable and renewable generators. Used in GMR/VAT</td>
 </tr>
 <tr class="even">
 <td class="detail">tp_address</td>
@@ -243,7 +242,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Address of trading participant</td>
 </tr>
 <tr class="odd">
 <td class="detail">tp_short_name</td>
@@ -254,7 +253,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Short name of the trading participant associated with the billing ID (could be direct or indirect)</td>
 </tr>
 <tr class="even">
 <td class="detail">trading_participant</td>
@@ -265,7 +264,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Full name of the trading participant associate with the billing ID (could be direct or indirect)</td>
 </tr>
 <tr class="odd">
 <td class="detail">virtual_id</td>
@@ -276,7 +275,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Identification number of direct participants in CRSS registration</td>
 </tr>
 <tr class="even">
 <td class="detail">withholding_tax</td>
@@ -287,7 +286,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Determines generators with or without withholding tax. Used in GMR/VAT.</td>
 </tr>
 <tr class="odd">
 <td class="detail">zero_rated</td>
@@ -298,7 +297,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Determines vatable and non-vatable participants. Used in GMR/VAT.</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
 <p title="17 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>

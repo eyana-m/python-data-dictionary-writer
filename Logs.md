@@ -50,3 +50,9 @@ To do:
 * Refactor code to **integrate** write table and field description jobs
   * Make `settlement_field_description` folder defunct
 * Add field descriptions to 144 tables (lol, the only task I cannot automate)
+
+# Jully 12, 2017
+
+https://stackoverflow.com/questions/34192705/python-how-to-check-if-cell-in-csv-file-is-empty
+
+https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x

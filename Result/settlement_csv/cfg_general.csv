@@ -5,6 +5,6 @@ created_date|
 modified_by|
 modified_date|
 version|
-interval|
-vat_rate|
-withholding_rate|
+interval| Global configuration for dispatch interval: 5-min or 15 min
+vat_rate|Global configuration for VAT rate. Default is 12%
+withholding_rate| Global configuration for withholding VAT rate. Default is 2%

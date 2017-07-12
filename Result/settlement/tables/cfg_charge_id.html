@@ -45,7 +45,7 @@
 <form action="" name="options">
 <label for="showRelatedCols"><input id="showRelatedCols" type="checkbox"/>Related columns</label>
 <label for="showConstNames"><input id="showConstNames" type="checkbox"/>Constraints</label>
-<label for="showComments"><input id="showComments" type="checkbox"/>Comments</label>
+<label for="showComments"><input checked="true" id="showComments" type="checkbox"/>Comments</label>
 <label for="showLegend"><input checked="" id="showLegend" type="checkbox"/>Legend</label>
 </form>
 </td>
@@ -100,7 +100,6 @@
 <tr valign="top">
 <td align="left" class="container" valign="top">
 <a name="columns"></a>
-
 <!---Table Description--->
 <br/> <div><strong>Description: </strong> Contains corresponding charge IDs for each settlement transaction. Used in generating AMS INV files. </div> <br/>
 <!---Table Description---><table border="1" class="dataTable" id="columns" rules="groups">
@@ -202,7 +201,7 @@
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Identification for each settlement or billing calculation. Used in AMS INV and MF files.</td>
 </tr>
 <tr class="odd">
 <td class="detail">charge_id_label</td>
@@ -213,7 +212,7 @@
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> Full name of charge IDs</td>
 </tr>
 <tr class="even">
 <td class="detail">effective_end_date</td>

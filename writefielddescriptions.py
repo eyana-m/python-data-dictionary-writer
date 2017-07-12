@@ -35,10 +35,24 @@ def writeToHTML(path):
         for r in comment_section:
              r.string = description
 
-        with open("Result/settlement_field_descriptions/tables/"+base, "w") as file:
+        with open("Result/settlement/tables/"+base, "w") as file:
             file.write(str(soup))
 
-    print "Done writing field description for %s"%(base)
+    print "Done writing field descriptions for %s"%(base)
+
+
+def isCompleteDescription(basename):
+    with open("Result/settlement_csv/"+basename+".csv", "rb") as f:
+        reader = csv.reader(f,delimiter="|")
+        header = next(reader, None)
+
+        for row in reader:
+            if row[1] in (None, ""):
+                continue
+            else:
+                return True
+        return False
+        
 
 
 print "-----------------------------------------------------------"
@@ -46,17 +60,29 @@ print "Writing Field Descriptions to SchemaSpy Data Dictionary"
 print "-----------------------------------------------------------"
 
 
-#This must be changed
-source = "Result/settlement/tables/"
 
-#pathlist = Path(source).glob('**/*.html')
+source = "Result/settlement_table_desc/tables/"
 
-pathlist = ['cfg_billing_id', 'cfg_charge_id']
+pathlist = Path(source).glob('**/*.html')
+
+#pathlist = ['cfg_billing_id', 'cfg_charge_id', 'cfg_general']
 for path in pathlist:
-    #path_in_str = str(path)
-    path_in_str = source+path+".html"
+
+    path_in_str = str(path)
     base=os.path.basename(path_in_str)
-    writeToHTML(path_in_str)
+    basename = os.path.splitext(base)[0]
+
+    print isCompleteDescription(basename)
+
+    # if  isCompleteDescription(basename) == True:
+    #     #writeToHTML(path_in_str)
+    #     print "True for %s" %(basename)
+    # else:
+    #     print "False for %s" %(basename)
+
+
+
+
 
 
 print "--------------------------------------------------------------------------"
