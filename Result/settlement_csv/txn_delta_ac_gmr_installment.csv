@@ -1,11 +1,11 @@
 Field|Description
-billing_id|
-billing_period_end|
-billing_period_start|
-payment_num|
+billing_id| billing id involved
+billing_period_end| start of billing period
+billing_period_start| end of billing period
+payment_num| payment sequence numner
 created_by|
 created_date|
 modified_by|
 modified_date|
 version|
-delta_vat_installment|
+delta_vat_installment| amount 

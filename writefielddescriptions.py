@@ -65,7 +65,7 @@ source = "Result/settlement_table_desc/tables/"
 
 pathlist = Path(source).glob('**/*.html')
 count = 0;
-
+total = 0;
 for path in pathlist:
 
     path_in_str = str(path)
@@ -79,11 +79,13 @@ for path in pathlist:
     else:
         continue
 
+    total = total + 1
+
 
 
 
 
 
 print "---------------------------------------------------"
-print "Job completed for %i tables. Check results folder." %(count)
+print "Job completed for %i out of %i tables. Check results folder." %(count, total)
 print "---------------------------------------------------"

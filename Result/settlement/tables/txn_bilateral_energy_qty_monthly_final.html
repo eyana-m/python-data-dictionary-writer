@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> id of the settlement run for adjustment versioning</td>
 </tr>
 <tr class="odd">
 <td class="detail">job_id</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> id of the settlement run by process type and billing period</td>
 </tr>
 <tr class="even">
 <td class="detail">run_date</td>
@@ -222,7 +222,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> gross buyer bilateral adjustment amount by dispatch interval</td>
 </tr>
 <tr class="odd">
 <td class="detail">buyer_bilateral_llcc</td>
@@ -233,7 +233,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail">  gross buyer bilateral LLCC by dispatch interval</td>
 </tr>
 <tr class="even">
 <td class="indexedColumn" title="Indexed">buyer_billing_id</td>
@@ -244,7 +244,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> billing ID of buyer</td>
 </tr>
 <tr class="odd">
 <td class="indexedColumn" title="Indexed">dispatch_interval</td>
@@ -266,7 +266,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> final energy dispatch price - from TODI EPS</td>
 </tr>
 <tr class="odd">
 <td class="detail">fedp_mcc</td>
@@ -277,7 +277,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> marginal congestion cost  - from TODI EPS</td>
 </tr>
 <tr class="even">
 <td class="detail">fedp_mlc</td>
@@ -288,7 +288,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> marginal loss cost  - from TODI EPS</td>
 </tr>
 <tr class="odd">
 <td class="detail">fedp_mlc_mcc</td>
@@ -299,7 +299,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> summation of mlc and mcc - from TODI EPS</td>
 </tr>
 <tr class="even">
 <td class="detail">fedp_smp</td>
@@ -310,7 +310,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> system marginal price - from TODI EPS</td>
 </tr>
 <tr class="odd">
 <td class="detail">llcp</td>
@@ -321,7 +321,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> calculated LLCP </td>
 </tr>
 <tr class="even">
 <td class="detail">lowest_fedp_mlc_mcc</td>
@@ -332,7 +332,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> lowest (mlc+mcc) by dispatch interval</td>
 </tr>
 <tr class="odd">
 <td class="detail">reference_mtn</td>
@@ -343,7 +343,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> reference mtn. usually the same with seller_mtn</td>
 </tr>
 <tr class="even">
 <td class="detail">sein</td>
@@ -354,7 +354,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> metering point</td>
 </tr>
 <tr class="odd">
 <td class="detail">seller_bilateral_adj_amt</td>
@@ -365,7 +365,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> gross seller bilateral adjustment amount by dispatch interval</td>
 </tr>
 <tr class="even">
 <td class="detail">seller_bilateral_llcc</td>
@@ -376,7 +376,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> gross seller LLCC by dispatch interval</td>
 </tr>
 <tr class="odd">
 <td class="indexedColumn" title="Indexed">seller_billing_id</td>
@@ -387,7 +387,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> billing ID of seller</td>
 </tr>
 <tr class="even">
 <td class="detail">seller_mtn</td>
@@ -398,7 +398,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> MTN of seller</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
 <p title="27 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>

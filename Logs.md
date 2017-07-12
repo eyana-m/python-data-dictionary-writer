@@ -66,5 +66,5 @@ To do:
 
 * Add warning: "This job will overwrite the existing folder. Are you sure you want to proceed?"
 * Add descriptions in `index.html` dynamically
-
+* Fix gitignore 
 
