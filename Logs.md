@@ -76,12 +76,19 @@ Handling Common Fields
 
 Workflow so far:
 
-1. Export table masterlist to csv
+1. Export table masterlist to csv (Google Sheets)
 2. Write table description to each table html
+   * `writetabledescriptiontohtml.py`
 3. Retrieve all common and unique fields from all table. Save to CSV
+   * `retrieveuniquefields.py`
 3. User adds description to all common and unique fields in just one csv
+   * `unique_fields.csv`
 4. Retrieve fields from table html. Add descriptions of common and unique fields
-5. Write field descriptions from csv to each table htmls.
+   * `writefieldstocsv.py`
+4. (Optional) User modifies description for specific table CSVSs
+   * `Result/settlement_csv/`
+5. Write field descriptions from table csv to each table html.
+   * `writefieldescriptionstohtml.py`
 
 
 To do:

@@ -1,18 +1,18 @@
 Field|Description
 id|
-created_by| author of the entry
-created_date| date when the entry is created
-modified_by|
-modified_date|
+created_by| author of the entry. system-generated.
+created_date| date of the entry. system-generated.
+modified_by| editor of the entry. system-generated
+modified_date| date that the entry has modified. system-generated
 version|
-billing_id| Identification number used by BSMD to identify direct participants billable to WESM
+billing_id| identification number used by BSMD to identify direct participants billable to WESM
 billing_period_end|
 billing_period_start|
 facility_type|
 gmr|
 nss_flowback|
 purchases|
-renewable| Determines non-renewable and renewable generators. Used in GMR/VAT
+renewable| determines non-renewable and renewable generators. Used in GMR/VAT
 run_date|
 sales|
 sales_to_ecozone|
@@ -22,9 +22,9 @@ vat_on_purchases|
 vat_on_sales|
 vatable_purchases|
 vatable_sales|
-withholding_tax|
+withholding_tax| determines generators with or without withholding tax. Used in GMR/VAT.
 withholding_tax_amt|
-zero_rated|
+zero_rated| determines vatable and non-vatable participants. Used in GMR/VAT.
 zero_rated_purchases|
 zero_rated_sales|
 group_id|

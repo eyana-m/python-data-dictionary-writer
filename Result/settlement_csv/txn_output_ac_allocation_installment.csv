@@ -5,9 +5,9 @@ mtn|
 payment_num|
 pricing_condition|
 sein|
-created_by| author of the entry
-created_date| date when the entry is created
-modified_by|
-modified_date|
+created_by| author of the entry. system-generated.
+created_date| date of the entry. system-generated.
+modified_by| editor of the entry. system-generated
+modified_date| date that the entry has modified. system-generated
 version|
 allocation_amount_installment|
