@@ -1,11 +1,11 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-due_date_interval_days|
+due_date_interval_days| interval between due dates in MRU installment; default is 30 days
 effective_end_date| end date of configuration
 effective_start_date| start date of configuration
-num_of_installments|
+num_of_installments| number of MRU installments; default if 4

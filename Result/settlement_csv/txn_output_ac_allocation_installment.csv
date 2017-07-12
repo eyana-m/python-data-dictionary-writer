@@ -1,13 +1,13 @@
 Field|Description
-ac_mtn|
+ac_mtn| claimant MTN
 dispatch_interval|
-mtn|
-payment_num|
-pricing_condition|
-sein|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+mtn| market trading node involved
+payment_num| payment sequence number
+pricing_condition| AP, SEC, or MRU
+sein| metering point
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-allocation_amount_installment|
+allocation_amount_installment| allocation amount with respect to installments

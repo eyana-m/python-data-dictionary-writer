@@ -1,28 +1,28 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-bcq|
-buyer_bilateral_adj_amt|
-buyer_bilateral_llcc|
-buyer_billing_id|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+bcq| bilateral contract quantity
+buyer_bilateral_adj_amt| gross buyer bilateral amount (bcq * price)
+buyer_bilateral_llcc| gross buyer line loss congestion costs
+buyer_billing_id| billing id of the bcq buyer
 dispatch_interval|
-fedp|
-fedp_mcc|
-fedp_mlc|
-fedp_mlc_mcc|
-fedp_smp|
-llcp|
-lowest_fedp_mlc_mcc|
-reference_mtn|
-sein|
-seller_bilateral_adj_amt|
-seller_bilateral_llcc|
-seller_billing_id|
-seller_mtn|
+fedp| final energy dispatch price - from TODI eps
+fedp_mcc| marginal congestion cost  - from TODI eps
+fedp_mlc| marginal loss cost  - from TODI eps
+fedp_mlc_mcc| summation of mlc and mcc - from TODI eps
+fedp_smp| system marginal price - from TODI eps
+llcp| calculated line loss congestion pric
+lowest_fedp_mlc_mcc| lowest (mlc+mcc) by dispatch interval
+reference_mtn| reference mtn. usually the same with seller_mtn
+sein| metering point
+seller_bilateral_adj_amt| gross seller bilateral adjustment amount by dispatch interval
+seller_bilateral_llcc| gross seller LLCC by dispatch interval
+seller_billing_id| billing ID of seller
+seller_mtn| MTN of seller

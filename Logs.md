@@ -58,10 +58,6 @@ Done:
 1. `writefielddescriptions.py`
    * Check if csv has field descriptions already
 
-https://stackoverflow.com/questions/34192705/python-how-to-check-if-cell-in-csv-file-is-empty
-
-https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x
-
 
 Handling Common Fields
 
@@ -95,6 +91,4 @@ To do:
 
 * Add warning: "This job will overwrite the existing folder. Are you sure you want to proceed?"
 * Add descriptions in `index.html` dynamically
-* Fix gitignore 
-
-
+* Fix gitignore

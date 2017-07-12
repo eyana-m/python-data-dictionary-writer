@@ -1,24 +1,24 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
-billing_period_end|
-billing_period_start|
-market_fee|
-market_fee_mode|
-mf_rate|
-mfq|
-mfr_config_amount|
-mtn|
-region|
-total_mfq|
-value_added_tax|
-zero_rated| determines vatable and non-vatable participants. Used in GMR/VAT.
-sein|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_start| start date of the billing period; usually on the 26th of last month
+market_fee| enable or disable Reserve Market fee calculation
+market_fee_mode| budget or rate
+mf_rate| market fee rate
+mfq| market fee quantity
+mfr_config_amount| market fee rate applicable for the billing period
+mtn| market trading node involved
+region| luzon, visayas, or mindanao
+total_mfq| total market fee rate
+value_added_tax| value added tax amount
+zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
+sein| metering point

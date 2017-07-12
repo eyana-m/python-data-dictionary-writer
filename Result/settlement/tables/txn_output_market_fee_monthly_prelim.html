@@ -123,7 +123,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> author of the entry. system-generated.</td>
+<td class="comment detail"> author field; system-generated.</td>
 </tr>
 <tr class="even">
 <td class="detail">created_date</td>
@@ -134,7 +134,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> date of the entry. system-generated.</td>
+<td class="comment detail"> date created field; system-generated.</td>
 </tr>
 <tr class="odd">
 <td class="detail">modified_by</td>
@@ -145,7 +145,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> editor of the entry. system-generated</td>
+<td class="comment detail"> editor field; system-generated</td>
 </tr>
 <tr class="even">
 <td class="detail">modified_date</td>
@@ -156,7 +156,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> date that the entry has modified. system-generated</td>
+<td class="comment detail"> last edited; system-generated</td>
 </tr>
 <tr class="odd">
 <td class="detail">version</td>
@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> identification of a settlement processing (by process type, by billing period) with adjustments considered</td>
 </tr>
 <tr class="odd">
 <td class="detail">job_id</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> identification of a settlement processing based from settlement-ready meter data</td>
 </tr>
 <tr class="even">
 <td class="detail">run_date</td>
@@ -200,7 +200,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> date the job was run</td>
 </tr>
 <tr class="odd">
 <td class="indexedColumn" title="Indexed">billing_id</td>
@@ -211,7 +211,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> identification number used by BSMD to identify direct participants billable to WESM</td>
+<td class="comment detail"> identification used by BSMD to identify direct participants billable to WESM</td>
 </tr>
 <tr class="even">
 <td class="indexedColumn" title="Indexed">billing_period_end</td>
@@ -222,7 +222,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> end date of the billing period; usually on the 25th of the current month</td>
 </tr>
 <tr class="odd">
 <td class="indexedColumn" title="Indexed">billing_period_start</td>
@@ -233,7 +233,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> start date of the billing period; usually on the 26th of last month</td>
 </tr>
 <tr class="even">
 <td class="detail">market_fee</td>
@@ -244,7 +244,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> enable or disable Reserve Market fee calculation</td>
 </tr>
 <tr class="odd">
 <td class="detail">market_fee_mode</td>
@@ -255,7 +255,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> budget or rate</td>
 </tr>
 <tr class="even">
 <td class="detail">mf_rate</td>
@@ -266,7 +266,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> market fee rate</td>
 </tr>
 <tr class="odd">
 <td class="detail">mfq</td>
@@ -277,7 +277,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> market fee quantity</td>
 </tr>
 <tr class="even">
 <td class="detail">mfr_config_amount</td>
@@ -288,7 +288,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> market fee rate applicable for the billing period</td>
 </tr>
 <tr class="odd">
 <td class="detail">mtn</td>
@@ -299,7 +299,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> market trading node involved</td>
 </tr>
 <tr class="even">
 <td class="detail">region</td>
@@ -310,7 +310,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> luzon, visayas, or mindanao</td>
 </tr>
 <tr class="odd">
 <td class="detail">total_mfq</td>
@@ -321,7 +321,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> total market fee rate</td>
 </tr>
 <tr class="even">
 <td class="detail">value_added_tax</td>
@@ -332,7 +332,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> value added tax amount</td>
 </tr>
 <tr class="odd">
 <td class="detail">zero_rated</td>
@@ -343,7 +343,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> determines vatable and non-vatable participants. Used in GMR/VAT.</td>
+<td class="comment detail"> determines vatable and non-vatable participants; used in GMR/VAT.</td>
 </tr>
 <tr class="even">
 <td class="detail">sein</td>
@@ -354,7 +354,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"></td>
+<td class="comment detail"> metering point</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
 <p title="23 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>

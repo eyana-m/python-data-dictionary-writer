@@ -1,26 +1,26 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
-cost_recovery_mode|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+cost_recovery_mode| For SOW9: CR_GESQ_GEN_ACTUAL, CR_GESQ_LOAD_ACTUAL, CR_GESQ_GEN_LOAD, CR_RUNWAY
 dispatch_interval|
-gen_gesq|
-gen_gesq_abs|
-load_gesq|
-load_gesq_abs|
-region|
-reserve_category|
-rr_cost|
-scaling_factor|
-total_gen_gesq|
-total_gen_gesq_abs|
-total_load_gesq|
-total_load_gesq_abs|
-total_rta|
+gen_gesq| actual gesq of generator
+gen_gesq_abs| absolute gesq of generator
+load_gesq| actual gesq of load
+load_gesq_abs| absolute gesq of load
+region| luzon, visayas, or mindanao
+reserve_category| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+rr_cost| reserve cost recovery amount
+scaling_factor| used to compute for allocations
+total_gen_gesq| total gesq of generators
+total_gen_gesq_abs| total gesq of generators in absolute value
+total_load_gesq| total load gesq
+total_load_gesq_abs|total gesq of loads in absolute value
+total_rta| total reserve trading amount

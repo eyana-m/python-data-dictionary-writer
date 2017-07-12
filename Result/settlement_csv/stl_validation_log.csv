@@ -1,8 +1,8 @@
 Field|Description
 id|
 created_datetime|
-details|
-error_code|
-group_id|
+details| details of validation error
+error_code| code from validation error
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
 parent_job|
-run_id|
+run_id| identification of a settlement run (by process type, by billing period); unique per job trigger

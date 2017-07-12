@@ -1,16 +1,16 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_period_end|
-billing_period_start|
-gmr|
-total_sales|
-total_vatable_sales|
-total_zero_rated_purchases|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_start| start date of the billing period; usually on the 26th of last month
+gmr| generation mix ratio
+total_sales| total sales
+total_vatable_sales| total vatable sales
+total_zero_rated_purchases| total zero-rated purchases

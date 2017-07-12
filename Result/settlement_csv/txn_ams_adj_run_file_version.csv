@@ -1,12 +1,12 @@
 Field|Description
-group_id|
-adj_run_created_date|
-billing_period_end|
-billing_period_id|
-billing_period_start|
-inv_generated|
-mf_generated|
-mru_installments|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+adj_run_created_date| date when the adjustment is applied
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_id| ordinal number of the billing period starting june 2006
+billing_period_start| start date of the billing period; usually on the 26th of last month
+inv_generated| check if AMS INV is generated
+mf_generated| check if AMS MF is generated
+mru_installments| count of mru installment
 parent_job|
-run_id|
-sp_generated|
+run_id| identification of a settlement run (by process type, by billing period); unique per job trigger
+sp_generated| check if AMS SP is generated
