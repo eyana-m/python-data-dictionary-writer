@@ -1,7 +1,7 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
@@ -10,16 +10,16 @@ job_id|
 run_date|
 bcq|
 bilateral_adj_amt|
-billing_id|
+billing_id| Identification number used by BSMD to identify direct participants billable to WESM
 dispatch_interval|
 facility_type|
 gesq|
-gta| gross trading amount
+gta|
 mtn|
 nss_flowback|
 purchases|
 region|
-renewable|
+renewable| Determines non-renewable and renewable generators. Used in GMR/VAT
 sales|
 sein|
 spot_qty|

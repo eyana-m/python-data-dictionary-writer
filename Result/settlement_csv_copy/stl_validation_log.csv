@@ -1,0 +1,8 @@
+Field|Description
+id|
+created_datetime|
+details| Description of validation error
+error_code| Validation error code
+group_id| serves as the idenitification of the settlement run being validated
+parent_job|
+run_id| run id of validation job 

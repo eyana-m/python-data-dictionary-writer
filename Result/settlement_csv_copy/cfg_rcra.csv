@@ -1,0 +1,13 @@
+Field|Description
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
+version|
+cost_recovery_mode| For SOW9: CR_GESQ_GEN_ACTUAL, CR_GESQ_LOAD_ACTUAL, CR_GESQ_GEN_LOAD, CR_RUNWAY
+effective_end_date|
+effective_start_date|
+market_product_id| Reserve category ID in registration (CRSS Ph 1.0)
+reserve_category_code| For SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+reserve_category_name| Corresponding name of the reserve category

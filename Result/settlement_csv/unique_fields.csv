@@ -1,16 +1,16 @@
 Field|Description
 id|
 |
-created_by|
-created_date|
-modified_by|
-modified_date|
+created_by| author of the entry. system-generated.
+created_date| date of the entry. system-generated.
+modified_by| editor of the entry. system-generated
+modified_date| date that the entry has modified. system-generated
 version|
-billing_id|
-direct_participant|
-effective_end_date|
-effective_start_date|
-renewable|
+billing_id| Identification number used by BSMD to identify direct participants billable to WESM
+direct_participant| Name of the direct participant who owns the billing ID
+effective_end_date| end date of configuration
+effective_start_date| start date of configuration
+renewable| Determines non-renewable and renewable generators. Used in GMR/VAT
 tp_address|
 tp_short_name|
 trading_participant|

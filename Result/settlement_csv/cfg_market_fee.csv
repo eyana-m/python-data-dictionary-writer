@@ -1,13 +1,13 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
-amount| Market Fee Budget
-effective_end_date|
-effective_start_date|
-energy| Rate for Energy Market Fees
-market_fee_mode| Budget or Mode
-reserves| Rate for Reserve Market Fees
+amount|
+effective_end_date| end date of configuration
+effective_start_date| start date of configuration
+energy|
+market_fee_mode|
+reserves|

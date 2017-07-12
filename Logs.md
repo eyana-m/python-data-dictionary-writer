@@ -62,14 +62,32 @@ https://stackoverflow.com/questions/34192705/python-how-to-check-if-cell-in-csv-
 
 https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x
 
+
+Handling Common Fields
+
+2. `retrieveuniquefields.py`
+   * get unique fields and save as csv
+   * allow user to manually define each unique field
+
+
+3. `writefieldstocsv.py`
+   * retrieve unique fields and description and write to respective table csv
+
+
+Workflow so far:
+
+1. Export table masterlist to csv
+2. Write table description to each table html
+3. Retrieve all common and unique fields from all table. Save to CSV
+3. User adds description to all common and unique fields in just one csv
+4. Retrieve fields from table html. Add descriptions of common and unique fields
+5. Write field descriptions from csv to each table htmls.
+
+
 To do:
 
 * Add warning: "This job will overwrite the existing folder. Are you sure you want to proceed?"
 * Add descriptions in `index.html` dynamically
 * Fix gitignore 
-* universal field description for field 
 
--- get unique fields. 
--- define each unique field
--- write in all html files with fields
 

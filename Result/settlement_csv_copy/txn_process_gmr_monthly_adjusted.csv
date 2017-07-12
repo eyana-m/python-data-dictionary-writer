@@ -1,0 +1,16 @@
+Field|Description
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
+version|
+group_id|
+job_id|
+run_date|
+billing_period_end|
+billing_period_start|
+gmr|
+total_sales|
+total_vatable_sales|
+total_zero_rated_purchases|

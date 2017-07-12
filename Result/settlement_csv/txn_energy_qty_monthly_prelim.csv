@@ -1,36 +1,36 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
-group_id| id of the settlement run for adjustment versioning
-job_id| id of the settlement run by process type and billing period
+group_id|
+job_id|
 run_date|
-billing_id|billing id involved
-billing_tp| trading participant full name (can be direct or indirect)
-billing_tp_short_name| trading participant short name (can be direct or indirect)
-direct_participant| Name of the direct participant who owns the billing ID - from billing id masterlist
+billing_id| Identification number used by BSMD to identify direct participants billable to WESM
+billing_tp|
+billing_tp_short_name|
+direct_participant| Name of the direct participant who owns the billing ID
 dispatch_interval|
-facility_type| GEN or LOAD
-fedp| final energy dispatch price - from TODI eps
-fedp_mcc| marginal congestion cost  - from TODI eps
-fedp_mlc| marginal loss cost  - from TODI eps
-fedp_mlc_mcc| summation of mlc and mcc - from TODI eps
-fedp_smp| system marginal price - from TODI eps
-gesq| gross energy settlement quantities
-gta| gross trading amount
-llcc| line loss congestion cost
-llcp| line loss congestion price
-lowest_fedp_mlc_mcc| lowest (mlc+mcc) by dispatch interval
-market_fee| energy delivered (quantity)
-mtn| market trading node involved
+facility_type|
+fedp|
+fedp_mcc|
+fedp_mlc|
+fedp_mlc_mcc|
+fedp_smp|
+gesq|
+gta|
+llcc|
+llcp|
+lowest_fedp_mlc_mcc|
+market_fee|
+mtn|
 mtn_facility_type|
-mw_schedule| energy mw schedule - from TODI eps
-region| region of MTN - from TODI eps
-renewable| renewable tag - from billing id masterlist
-sein| metering point
-virtual_id| from billing id masterlist
-withholding_tax| withholding tax tag - from billing id masterlist
-zero_rated| zero-rated tag - from billing id masterlist
+mw_schedule|
+region|
+renewable| Determines non-renewable and renewable generators. Used in GMR/VAT
+sein|
+virtual_id|
+withholding_tax|
+zero_rated|

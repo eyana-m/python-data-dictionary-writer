@@ -1,0 +1,11 @@
+Field|Description
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
+version|
+due_date_interval_days| Default is 30 days
+effective_end_date|
+effective_start_date|
+num_of_installments| Number of installments for MRU Additional compensation. Default is 4

@@ -1,12 +1,12 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
-effective_end_date| End date of association
-effective_start_date| Start date of association
-sein| Metering Point
-billing_id| Billing ID associated with the metering point
+effective_end_date| end date of configuration
+effective_start_date| start date of configuration
+sein|
+billing_id| Identification number used by BSMD to identify direct participants billable to WESM
 |

@@ -1,14 +1,14 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
-effective_end_date|
-effective_start_date|
-market_fee| Enable or disable Reserve Market Fee calculation
-market_product_id| Reserve category ID in registration (CRSS Ph 1.0)
-rcra| Enable or disable RCRA calculation
-reserve_category_name| Enable or disable Reserve calculation by reserve category name
-rta| Enable or disable RTA calculation
+effective_end_date| end date of configuration
+effective_start_date| start date of configuration
+market_fee|
+market_product_id|
+rcra|
+reserve_category_name|
+rta|

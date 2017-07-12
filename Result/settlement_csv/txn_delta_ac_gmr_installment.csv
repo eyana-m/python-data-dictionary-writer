@@ -1,11 +1,11 @@
 Field|Description
-billing_id| billing id involved
-billing_period_end| start of billing period
-billing_period_start| end of billing period
-payment_num| payment sequence number
-created_by|
-created_date|
+billing_id| Identification number used by BSMD to identify direct participants billable to WESM
+billing_period_end|
+billing_period_start|
+payment_num|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
-delta_vat_installment| amount 
+delta_vat_installment|

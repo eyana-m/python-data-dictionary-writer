@@ -1,10 +1,10 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
-dispatch_interval_end| End time of MRU status
-dispatch_interval_start| Start time of MRU status
-mtn| MTN that is a must-run-unit
+dispatch_interval_end|
+dispatch_interval_start|
+mtn|

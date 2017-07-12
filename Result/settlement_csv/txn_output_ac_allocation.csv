@@ -1,28 +1,28 @@
 Field|Description
 id|
-created_by|
-created_date|
+created_by| author of the entry
+created_date| date when the entry is created
 modified_by|
 modified_date|
 version|
 ac_group_id|
 ac_job_id|
 approved_rate|
-billing_id| billing id involved
-billing_period_end| trading participant full name (can be direct or indirect)
-billing_period_start| trading participant short name (can be direct or indirect)
-group_id| id of the settlement run for adjustment versioning
-job_id| id of the settlement run by process type and billing period
-pricing_condition| AP, SEC, MRU
+billing_id| Identification number used by BSMD to identify direct participants billable to WESM
+billing_period_end|
+billing_period_start|
+group_id|
+job_id|
+pricing_condition|
 run_date|
-virtual_id| from billing id masterlist
-ac_amount| additional compensation amount - for generators
-ac_mtn| MTN with the claim
-allocation_amount| additional compensation amount - for energy consumers
+virtual_id|
+ac_amount|
+ac_mtn|
+allocation_amount|
 dispatch_interval|
 facility_type|
-gesq| gross energy settlement amount
+gesq|
 total_gesq_per_di_region|
-mtn| market trading node
+mtn|
 region|
-sein| metering point
+sein|

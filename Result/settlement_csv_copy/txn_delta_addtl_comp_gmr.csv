@@ -1,0 +1,13 @@
+Field|Description
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
+version|
+ac_group_id| id of ac run
+billing_id| billing id involved
+billing_period_end| start of billing period
+billing_period_start| end of billing period
+run_date|
+vat| total tax amount

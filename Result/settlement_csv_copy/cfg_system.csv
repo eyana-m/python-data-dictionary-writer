@@ -1,0 +1,14 @@
+Field|Description
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
+version|
+effective_end_date|
+effective_start_date|
+name| For SOW9: CEILING_PRICE, FLOOR_PRICE, MAX_SCHEDS_QTY, MIN_SCHEDS_QTY, MAX_GESQ_QTY, MIN_GESQ_QTY
+value| Corresponding value of the configuration
+
+
+
