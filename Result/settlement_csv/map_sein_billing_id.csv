@@ -5,8 +5,8 @@ created_date|
 modified_by|
 modified_date|
 version|
-effective_end_date|
-effective_start_date|
-sein|
-billing_id|
+effective_end_date| End date of association
+effective_start_date| Start date of association
+sein| Metering Point
+billing_id| Billing ID associated with the metering point
 |

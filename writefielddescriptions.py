@@ -55,36 +55,35 @@ def isCompleteDescription(basename):
         
 
 
-print "-----------------------------------------------------------"
-print "Writing Field Descriptions to SchemaSpy Data Dictionary"
-print "-----------------------------------------------------------"
+print "------------------------------------------------------"
+print "Write Field Descriptions to SchemaSpy Data Dictionary"
+print "------------------------------------------------------"
 
 
 
 source = "Result/settlement_table_desc/tables/"
 
 pathlist = Path(source).glob('**/*.html')
+count = 0;
 
-#pathlist = ['cfg_billing_id', 'cfg_charge_id', 'cfg_general']
 for path in pathlist:
 
     path_in_str = str(path)
     base=os.path.basename(path_in_str)
     basename = os.path.splitext(base)[0]
 
-    print isCompleteDescription(basename)
 
-    # if  isCompleteDescription(basename) == True:
-    #     #writeToHTML(path_in_str)
-    #     print "True for %s" %(basename)
-    # else:
-    #     print "False for %s" %(basename)
-
+    if  isCompleteDescription(basename) == True:
+        writeToHTML(path_in_str)
+        count = count + 1
+    else:
+        continue
 
 
 
 
 
-print "--------------------------------------------------------------------------"
-print "Wrote all field descriptions of all settlement tables. Check results folder."
-print "---------------------------------------------------------------------------"
+
+print "---------------------------------------------------"
+print "Job completed for %i tables. Check results folder." %(count)
+print "---------------------------------------------------"

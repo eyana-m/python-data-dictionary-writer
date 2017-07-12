@@ -7,8 +7,8 @@ modified_date|
 version|
 effective_end_date|
 effective_start_date|
-market_fee|
-market_product_id|
-rcra|
-reserve_category_name|
-rta|
+market_fee| Enable or disable Reserve Market Fee calculation
+market_product_id| Reserve category ID in registration (CRSS Ph 1.0)
+rcra| Enable or disable RCRA calculation
+reserve_category_name| Enable or disable Reserve calculation by reserve category name
+rta| Enable or disable RTA calculation
