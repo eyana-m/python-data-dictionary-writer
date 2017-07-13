@@ -18,7 +18,7 @@ run_date| date the job was run
 virtual_id| identification of direct participants in CRSS registration
 ac_amount| additional compensation amount
 bcq| bilateral contract quantity
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 fedp| final energy dispatch price - from TODI eps
 gesq| gross energy settlement quantities
 mtn| market trading node involved

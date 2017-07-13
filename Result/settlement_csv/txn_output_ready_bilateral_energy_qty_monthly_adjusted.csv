@@ -12,7 +12,7 @@ bcq| bilateral contract quantity
 buyer_bilateral_adj_amt| gross buyer bilateral amount (bcq * price)
 buyer_bilateral_llcc| gross buyer line loss congestion costs
 buyer_billing_id| billing id of the bcq buyer
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 fedp| final energy dispatch price - from TODI eps
 fedp_mcc| marginal congestion cost  - from TODI eps
 fedp_mlc| marginal loss cost  - from TODI eps

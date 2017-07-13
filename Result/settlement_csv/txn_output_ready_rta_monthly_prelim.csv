@@ -9,7 +9,7 @@ group_id| identification of a settlement processing based on settlement trigger;
 job_id| identification of a settlement processing based from settlement-ready meter data
 run_date| date the job was run
 billing_id| identification used by BSMD to identify direct participants billable to WESM
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 frdp| final reserve dispatch price - from TODI rps
 mtn| market trading node involved
 rbcq| reserve bilateral contract price

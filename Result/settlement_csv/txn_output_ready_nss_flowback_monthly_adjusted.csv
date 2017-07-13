@@ -9,7 +9,7 @@ group_id| identification of a settlement processing based on settlement trigger;
 job_id| identification of a settlement processing based from settlement-ready meter data
 run_date| date the job was run
 billing_id| identification used by BSMD to identify direct participants billable to WESM
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 final_llcc| final line loss congestion cost
 gen_bilateral_llcc| gross generator bilateral line loss congestion cost
 gen_gross_llcc| gross generator line loss congestion cost

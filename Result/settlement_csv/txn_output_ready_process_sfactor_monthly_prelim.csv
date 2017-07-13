@@ -10,7 +10,7 @@ job_id| identification of a settlement processing based from settlement-ready me
 run_date| date the job was run
 billing_id| identification used by BSMD to identify direct participants billable to WESM
 common_block| common blocks of provided reserves
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 ga|generator allocation per common block
 highest_mw_schedule| highest mw schedule at a given dispatch interval
 mtn| market trading node involved

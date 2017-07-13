@@ -12,7 +12,7 @@ billing_id| identification used by BSMD to identify direct participants billable
 billing_tp| full name of trading participant
 billing_tp_short_name| short name of trading participant
 direct_participant| name of the direct participant who owns the billing ID
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 facility_type| gen or load
 fedp| final energy dispatch price - from TODI eps
 fedp_mcc| marginal congestion cost  - from TODI eps

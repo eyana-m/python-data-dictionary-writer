@@ -8,7 +8,7 @@ version|
 group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 job_id| identification of a settlement processing based from settlement-ready meter data
 run_date| date the job was run
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 nss| net settlement surplus
 total_buyer_bilateral_adj| total buyer bilateral adj amount
 total_gen_gta| total gross trading amount of generators

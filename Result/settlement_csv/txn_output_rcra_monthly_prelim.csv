@@ -10,7 +10,7 @@ job_id| identification of a settlement processing based from settlement-ready me
 run_date| date the job was run
 billing_id| identification used by BSMD to identify direct participants billable to WESM
 cost_recovery_mode| For SOW9: CR_GESQ_GEN_ACTUAL, CR_GESQ_LOAD_ACTUAL, CR_GESQ_GEN_LOAD, CR_RUNWAY
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 gen_gesq| actual gesq of generator
 gen_gesq_abs| absolute gesq of generator
 load_gesq| actual gesq of load

@@ -1,5 +1,5 @@
 Field|Description
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 mtn| market trading node involved
 payment_num| payment sequence number
 pricing_condition| AP, SEC, or MRU

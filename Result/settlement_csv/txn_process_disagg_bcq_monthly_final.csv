@@ -15,7 +15,7 @@ buying_fedp| purchase price
 buying_lr| line rental of buyer
 buying_mtn| MTN of buyer
 buying_sein| metering point of buyer
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 ref_fedp| reference fedp
 reference_mtn| reference mtn. usually the same with seller_mtn
 seller_billing_id| billing ID of seller

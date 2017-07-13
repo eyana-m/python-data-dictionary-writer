@@ -96,4 +96,15 @@ To do:
 
 #July 13, 2017
 
-https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
+Created `writeTableDescriptionToIndex.py`
+
+Incorporated with `writeTableDescriptionToHTML.py` to optimize process
+
+Workflow so far:
+
+1. Export table list to CSV (c/o Google Sheets)
+2. Update table descriptions of index and table pages using `writeTableDescriptiontoHTML.py`
+3. If no more fields yet: 
+   * Retrieve all unique fields to CSV using `retrieveUniqueFields.py`
+   * Write fields to CSV using `writeFieldsToCSV.py`
+4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writeFieldDescriptionsToHTML.py`

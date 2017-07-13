@@ -19,7 +19,7 @@ virtual_id| identification of direct participants in CRSS registration
 ac_amount| additional compensation amount
 bcq| bilateral contract quantity
 bilateral_adj_amt| actual bilateral adjustment amount
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 gesq| gross energy settlement quantities
 gta| gross trading amounts
 mtn| market trading node involved

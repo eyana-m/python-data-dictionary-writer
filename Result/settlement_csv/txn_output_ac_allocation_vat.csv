@@ -21,7 +21,7 @@ ac_mtn| claimant MTN
 allocation_amount| additional compensation allocation amount (with respect to energy consumption)
 bcq| bilateral contract quantity
 bilateral_adj_amt| actual bilateral adjustment amount
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 facility_type| gen or load
 gesq| gross energy settlement quantities
 gta| gross trading amounts

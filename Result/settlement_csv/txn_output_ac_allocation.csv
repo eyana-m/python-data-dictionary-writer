@@ -19,7 +19,7 @@ virtual_id| identification of direct participants in CRSS registration
 ac_amount| additional compensation amount
 ac_mtn| claimant MTN
 allocation_amount| additional compensation allocation amount (with respect to energy consumption)
-dispatch_interval|
+dispatch_interval| for SOW9: default is 5 minutes
 facility_type| gen or load
 gesq| gross energy settlement quantities
 total_gesq_per_di_region| total gesq per dispatch interval, region
