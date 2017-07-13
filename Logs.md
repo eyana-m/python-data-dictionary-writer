@@ -51,7 +51,7 @@ To do:
   * Make `settlement_field_description` folder defunct
 * Add field descriptions to 144 tables (lol, the only task I cannot automate)
 
-# Jully 12, 2017
+# July 12, 2017
 
 Done:
 
@@ -92,3 +92,8 @@ To do:
 * Add warning: "This job will overwrite the existing folder. Are you sure you want to proceed?"
 * Add descriptions in `index.html` dynamically
 * Fix gitignore
+
+
+#July 13, 2017
+
+https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
