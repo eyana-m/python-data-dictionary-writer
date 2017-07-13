@@ -6,7 +6,16 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 * I need to create a data dictionary that is useful and informative to the client, but...
 * Too busy (and lazy) to manually copy and paste descriptions of 144 tables to their respective HTML files.
 
-## Quick Start: How to use these scripts?
+## Quick Start
+
+1. Export table list to CSV (c/o Google Sheets)
+2. Update table descriptions of index and table pages using `writeTableDescriptiontoHTML.py`
+3. If no more fields yet: 
+   * Retrieve all unique fields to CSV using `retrieveUniqueFields.py`
+   * Write fields and field descriptions to CSV using `writeFieldsToCSV.py`
+4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writeFieldDescriptionsToHTML.py`
+
+## TL;DR version: How to use these scripts?
 
 1. Export **table masterlist with descriptions** to csv (Google Sheets). 
 	* Default Directory: `../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv`
