@@ -3,6 +3,6 @@ id|
 created_datetime|
 details| details of validation error
 error_code| code from validation error
-group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 parent_job|
-run_id| identification of a settlement run (by process type, by billing period); unique per job trigger
+run_id| identification of a settlement run by process type, by billing period; unique per job trigger

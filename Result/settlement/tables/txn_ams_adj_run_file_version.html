@@ -78,7 +78,7 @@ google_color_text = "000000";
 </td><tr valign="top"><td align="left" class="container" valign="top">
 <a name="columns"></a>
 <!---Table Description--->
-<br/> <div><strong>Description: </strong> File versioning of AMS SP and INV files. Used in adjustments and additional compensation </div> <br/>
+<br/> <div><strong>Description: </strong> File versioning of AMS SP and INV files. Used in adjustments and additional compensation. </div> <br/>
 <!---Table Description---><table border="1" class="dataTable" id="columns" rules="groups">
 <colgroup>
 <colgroup>
@@ -112,7 +112,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> identification of a settlement processing (by process type, by billing period) with adjustments considered</td>
+<td class="comment detail"> identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run</td>
 </tr>
 <tr class="odd">
 <td class="detail">adj_run_created_date</td>
@@ -211,7 +211,7 @@ google_color_text = "000000";
 <td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
-<td class="comment detail"> identification of a settlement run (by process type, by billing period); unique per job trigger</td>
+<td class="comment detail"> identification of a settlement run by process type, by billing period; unique per job trigger</td>
 </tr>
 <tr class="even">
 <td class="detail">sp_generated</td>

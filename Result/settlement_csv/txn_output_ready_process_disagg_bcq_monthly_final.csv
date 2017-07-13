@@ -5,7 +5,7 @@ created_date| date created field; system-generated.
 modified_by| editor field; system-generated
 modified_date| last edited; system-generated
 version|
-group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 job_id| identification of a settlement processing based from settlement-ready meter data
 run_date| date the job was run
 bcq| bilateral contract quantity

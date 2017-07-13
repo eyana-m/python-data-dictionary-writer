@@ -28,7 +28,7 @@ zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
 zero_rated_purchases| zero-rated purchases
 zero_rated_sales| zero-rated sales
 ac_group_id| group id of additional compensation run
-group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 prev_vat_on_energy| previous vat on energy
 pricing_condition| AP, SEC, or MRU
 virtual_id| identification of direct participants in CRSS registration

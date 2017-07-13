@@ -27,5 +27,5 @@ withholding_tax_amt| withholding tax amount
 zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
 zero_rated_purchases| zero-rated purchases
 zero_rated_sales| zero-rated sales
-group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 job_id| identification of a settlement processing based from settlement-ready meter data

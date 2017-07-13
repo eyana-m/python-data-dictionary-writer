@@ -1,5 +1,5 @@
 Field|Description
-group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 adj_run_created_date| date when the adjustment is applied
 billing_period_end| end date of the billing period; usually on the 25th of the current month
 billing_period_id| ordinal number of the billing period starting june 2006
@@ -8,5 +8,5 @@ inv_generated| check if AMS INV is generated
 mf_generated| check if AMS MF is generated
 mru_installments| count of mru installment
 parent_job|
-run_id| identification of a settlement run (by process type, by billing period); unique per job trigger
+run_id| identification of a settlement run by process type, by billing period; unique per job trigger
 sp_generated| check if AMS SP is generated

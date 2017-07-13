@@ -11,7 +11,7 @@ approved_rate| approved rate of claimant mtn; inputted by the user
 billing_id| identification used by BSMD to identify direct participants billable to WESM
 billing_period_end| end date of the billing period; usually on the 25th of the current month
 billing_period_start| start date of the billing period; usually on the 26th of last month
-group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
 job_id| identification of a settlement processing based from settlement-ready meter data
 pricing_condition| AP, SEC, or MRU
 run_date| date the job was run
