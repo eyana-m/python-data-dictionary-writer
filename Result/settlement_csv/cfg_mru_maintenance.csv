@@ -1,10 +1,10 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-dispatch_interval_end|
-dispatch_interval_start|
-mtn|
+dispatch_interval_end| end datetime of configuration
+dispatch_interval_start| start datetime of configuration
+mtn| market trading node involved

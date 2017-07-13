@@ -67,3 +67,7 @@ Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blo
 5. [Finding html element by class](https://stackoverflow.com/questions/5041008/how-to-find-elements-by-class)
 
 6. [Writing to BS4 Find object](https://stackoverflow.com/questions/17610438/beautifulsoup-insert-text-var-into-every-given-td-class)
+
+7. [Python: How to check if cell in csv file is empty](https://stackoverflow.com/questions/34192705/python-how-to-check-if-cell-in-csv-file-is-empty)
+
+8. [How to install pip in mac](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)

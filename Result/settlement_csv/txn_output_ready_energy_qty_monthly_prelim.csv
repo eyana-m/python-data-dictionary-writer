@@ -1,36 +1,36 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
-billing_tp|
-billing_tp_short_name|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+billing_tp| full name of trading participant
+billing_tp_short_name| short name of trading participant
 direct_participant| name of the direct participant who owns the billing ID
 dispatch_interval|
-facility_type|
-fedp|
-fedp_mcc|
-fedp_mlc|
-fedp_mlc_mcc|
-fedp_smp|
-gesq|
-gta|
-llcc|
-llcp|
-lowest_fedp_mlc_mcc|
-market_fee|
-mtn|
-mtn_facility_type|
-mw_schedule|
-region|
-renewable| determines non-renewable and renewable generators. Used in GMR/VAT
-sein|
-virtual_id| identification number of direct participants in CRSS registration
-withholding_tax| determines generators with or without withholding tax. Used in GMR/VAT.
-zero_rated| determines vatable and non-vatable participants. Used in GMR/VAT.
+facility_type| gen or load
+fedp| final energy dispatch price - from TODI eps
+fedp_mcc| marginal congestion cost  - from TODI eps
+fedp_mlc| marginal loss cost  - from TODI eps
+fedp_mlc_mcc| summation of mlc and mcc - from TODI eps
+fedp_smp| system marginal price - from TODI eps
+gesq| gross energy settlement quantities
+gta| gross trading amounts
+llcc| line loss congestion cost
+llcp| calculated line loss congestion pric
+lowest_fedp_mlc_mcc| lowest (mlc+mcc) by dispatch interval
+market_fee| enable or disable Reserve Market fee calculation
+mtn| market trading node involved
+mtn_facility_type| gen or load
+mw_schedule| energy schedule of mtn; from TODI eps
+region| luzon, visayas, or mindanao
+renewable| determines non-renewable and renewable generators; used in GMR/VAT
+sein| metering point
+virtual_id| identification of direct participants in CRSS registration
+withholding_tax| determines generators with or without withholding tax; used in GMR/VAT.
+zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.

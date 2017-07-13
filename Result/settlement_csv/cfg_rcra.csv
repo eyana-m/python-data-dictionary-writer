@@ -1,13 +1,13 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-cost_recovery_mode|
+cost_recovery_mode| For SOW9: CR_GESQ_GEN_ACTUAL, CR_GESQ_LOAD_ACTUAL, CR_GESQ_GEN_LOAD, CR_RUNWAY
 effective_end_date| end date of configuration
 effective_start_date| start date of configuration
-market_product_id|
-reserve_category_code|
-reserve_category_name|
+market_product_id| reserve category ID in registration (CRSS Ph 1.0)
+reserve_category_code| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+reserve_category_name| corresponding name of reserve category

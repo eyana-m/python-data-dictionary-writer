@@ -1,24 +1,24 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
 dispatch_interval|
-final_llcc|
-gen_bilateral_llcc|
-gen_gross_llcc|
-load_bilateral_llcc|
-load_gesq|
-load_gross_llcc|
-nss_flowback|
-raw_llcc|
-scaling_factor|
-total_final_llcc|
-total_load_gesq|
-total_nss|
+final_llcc| final line loss congestion cost
+gen_bilateral_llcc| gross generator bilateral line loss congestion cost
+gen_gross_llcc| gross generator line loss congestion cost
+load_bilateral_llcc| gross load bilateral line loss congestion cost
+load_gesq| actual gesq of load
+load_gross_llcc| gross llcc of load
+nss_flowback| also known as nss allocation, either by LLCC or GESQ
+raw_llcc| raw llcc, not the absolute value
+scaling_factor| used to compute for allocations
+total_final_llcc| total final llcc
+total_load_gesq| total load gesq
+total_nss| total nss per dispatch interval

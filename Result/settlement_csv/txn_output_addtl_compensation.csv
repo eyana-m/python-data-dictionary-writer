@@ -1,25 +1,25 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-ac_group_id|
-ac_job_id|
-approved_rate|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
-billing_period_end|
-billing_period_start|
-group_id|
-job_id|
-pricing_condition|
-run_date|
-virtual_id| identification number of direct participants in CRSS registration
-ac_amount|
-bcq|
+ac_group_id| group id of additional compensation run
+ac_job_id| job id of additional compensation run
+approved_rate| approved rate of claimant mtn; inputted by the user
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_start| start date of the billing period; usually on the 26th of last month
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+pricing_condition| AP, SEC, or MRU
+run_date| date the job was run
+virtual_id| identification of direct participants in CRSS registration
+ac_amount| additional compensation amount
+bcq| bilateral contract quantity
 dispatch_interval|
-fedp|
-gesq|
-mtn|
-region|
+fedp| final energy dispatch price - from TODI eps
+gesq| gross energy settlement quantities
+mtn| market trading node involved
+region| luzon, visayas, or mindanao

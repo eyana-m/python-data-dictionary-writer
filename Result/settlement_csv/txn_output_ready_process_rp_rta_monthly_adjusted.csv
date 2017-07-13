@@ -1,16 +1,16 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
 dispatch_interval|
-region|
-reserve_category|
-reserve_qty|
-rta|
+region| luzon, visayas, or mindanao
+reserve_category| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+reserve_qty| reserve quantity (reserve schedule - rbcq)
+rta| enable or disable RTA calculation

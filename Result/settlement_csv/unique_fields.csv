@@ -1,44 +1,44 @@
 Field|Description
 id|
 |
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
+billing_id| identification used by BSMD to identify direct participants billable to WESM
 direct_participant| name of the direct participant who owns the billing ID
 effective_end_date| end date of configuration
 effective_start_date| start date of configuration
-renewable| determines non-renewable and renewable generators. Used in GMR/VAT
-tp_address| address of trading participant
-tp_short_name| short name of the trading participant associated with the billing ID (could be direct or indirect)
-trading_participant| full name of the trading participant associated with the billing ID (could be direct or indirect)
-virtual_id| identification number of direct participants in CRSS registration
-withholding_tax| determines generators with or without withholding tax. Used in GMR/VAT.
-zero_rated| determines vatable and non-vatable participants. Used in GMR/VAT.
-charge_id|
-charge_id_label|
-interval|
-vat_rate|
-withholding_rate|
-amount|
-energy|
-market_fee_mode|
-reserves|
-due_date_interval_days|
-num_of_installments|
-dispatch_interval_end|
-dispatch_interval_start|
-mtn|
-cost_recovery_mode|
-market_product_id|
-reserve_category_code|
-reserve_category_name|
-name|
-market_fee|
-rcra|
-rta|
+renewable| determines non-renewable and renewable generators; used in GMR/VAT
+tp_address| address of trading participant; inputted by the user
+tp_short_name| short name of the trading participant associated with the billing ID (could be direct or indirect); inputted by the user
+trading_participant| full name of the trading participant associated with the billing ID (could be direct or indirect); inputted by the user
+virtual_id| identification of direct participants in CRSS registration
+withholding_tax| determines generators with or without withholding tax; used in GMR/VAT.
+zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
+charge_id| identification for each settlement or billing calculation; used in AMS INV and MF files.
+charge_id_label| full name of charge IDs
+interval| available configuration: 5-min or 15-min
+vat_rate| global configuration for VAT rate; default is 12%
+withholding_rate| global configuration for withholding rate of generators; default is 2%
+amount| equivalent amount with respect to set price and quantity
+energy| configured rate for energy market fees
+market_fee_mode| budget or rate
+reserves| configured rate for reserve market fees
+due_date_interval_days| interval between due dates in MRU installment; default is 30 days
+num_of_installments| number of MRU installments; default if 4
+dispatch_interval_end| end datetime of configuration
+dispatch_interval_start| start datetime of configuration
+mtn| market trading node involved
+cost_recovery_mode| For SOW9: CR_GESQ_GEN_ACTUAL, CR_GESQ_LOAD_ACTUAL, CR_GESQ_GEN_LOAD, CR_RUNWAY
+market_product_id| reserve category ID in registration (CRSS Ph 1.0)
+reserve_category_code| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+reserve_category_name| corresponding name of reserve category
+name| region name
+market_fee| enable or disable Reserve Market fee calculation
+rcra| enable or disable RCRA calculation
+rta| enable or disable RTA calculation
 value|
 author|
 filename|
@@ -56,133 +56,134 @@ deployment_id|
 locked|
 lockgranted|
 lockedby|
-sein|
+sein| metering point
 created_datetime|
-details|
-error_code|
-group_id|
+details| details of validation error
+error_code| code from validation error
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
 parent_job|
-run_id|
-adj_run_created_date|
-billing_period_end|
-billing_period_id|
-billing_period_start|
-inv_generated|
-mf_generated|
-mru_installments|
-sp_generated|
-job_id|
-run_date|
-bcq|
-buyer_bilateral_adj_amt|
-buyer_bilateral_llcc|
-buyer_billing_id|
+run_id| identification of a settlement run (by process type, by billing period); unique per job trigger
+adj_run_created_date| date when the adjustment is applied
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_id| ordinal number of the billing period starting june 2006
+billing_period_start| start date of the billing period; usually on the 26th of last month
+inv_generated| check if AMS INV is generated
+mf_generated| check if AMS MF is generated
+mru_installments| count of mru installment
+sp_generated| check if AMS SP is generated
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+bcq| bilateral contract quantity
+buyer_bilateral_adj_amt| gross buyer bilateral amount (bcq * price)
+buyer_bilateral_llcc| gross buyer line loss congestion costs
+buyer_billing_id| billing id of the bcq buyer
 dispatch_interval|
-fedp|
-fedp_mcc|
-fedp_mlc|
-fedp_mlc_mcc|
-fedp_smp|
-llcp|
-lowest_fedp_mlc_mcc|
-reference_mtn|
-seller_bilateral_adj_amt|
-seller_bilateral_llcc|
-seller_billing_id|
-seller_mtn|
-payment_num|
-delta_vat_installment|
-ac_group_id|
-vat|
+fedp| final energy dispatch price - from TODI eps
+fedp_mcc| marginal congestion cost  - from TODI eps
+fedp_mlc| marginal loss cost  - from TODI eps
+fedp_mlc_mcc| summation of mlc and mcc - from TODI eps
+fedp_smp| system marginal price - from TODI eps
+llcp| calculated line loss congestion pric
+lowest_fedp_mlc_mcc| lowest (mlc+mcc) by dispatch interval
+reference_mtn| reference mtn. usually the same with seller_mtn
+sein| metering point
+seller_bilateral_adj_amt| gross seller bilateral adjustment amount by dispatch interval
+seller_bilateral_llcc| gross seller LLCC by dispatch interval
+seller_billing_id| billing ID of seller
+seller_mtn| MTN of seller
+payment_num| payment sequence number
+delta_vat_installment| VAT amount payable with respect to installment count
+ac_group_id| group id of additional compensation run
+vat| vat amount (vat on energy + vat on purchases)
 quantity|
-mf_rate|
-gmr|
-tta|
-vat_on_purchases|
-vat_on_sales|
-vatable_purchases|
-vatable_sales|
-withholding_tax_amt|
-zero_rated_ecozone|
-zero_rated_purchases|
-zero_rated_sales|
-billing_tp|
-billing_tp_short_name|
-facility_type|
-gesq|
-gta|
-llcc|
-mtn_facility_type|
-mw_schedule|
-region|
-ac_job_id|
-approved_rate|
-pricing_condition|
-ac_amount|
-ac_mtn|
-allocation_amount|
-total_gesq_per_di_region|
-allocation_amount_installment|
-bilateral_adj_amt|
-spot_qty|
-ac_amount_installment|
-nss_flowback|
-purchases|
-sales|
-sales_to_ecozone|
-vat_on_ecozones|
-prev_vat_on_energy|
-eta|
-line_rental|
-mfq|
-mfr_config_amount|
-total_mfq|
-value_added_tax|
-final_llcc|
-gen_bilateral_llcc|
-gen_gross_llcc|
-load_bilateral_llcc|
-load_gesq|
-load_gross_llcc|
-raw_llcc|
-scaling_factor|
-total_final_llcc|
-total_load_gesq|
-total_nss|
-gen_gesq|
-gen_gesq_abs|
-load_gesq_abs|
-reserve_category|
-rr_cost|
-total_gen_gesq|
-total_gen_gesq_abs|
-total_load_gesq_abs|
-total_rta|
-buying_bcq|
-buying_fedp|
-buying_lr|
-buying_mtn|
-buying_sein|
-ref_fedp|
-selling_bcq|
-selling_fedp|
-selling_lr|
-total_sales|
-total_vatable_sales|
-total_zero_rated_purchases|
-nss|
-total_buyer_bilateral_adj|
-total_gen_gta|
-total_load_gta|
-total_seller_bilateral_adj|
-reserve_qty|
-common_block|
-ga|
-highest_mw_schedule|
-num_of_generators|
-sqty|
-total_rds|
-frdp|
-rbcq|
-rds|
-rsq|
+mf_rate| market fee rate
+gmr| generation mix ratio
+tta| total trading amount
+vat_on_purchases| vat on purchases
+vat_on_sales| vat on sales
+vatable_purchases| vatable purchases
+vatable_sales| vatable sales
+withholding_tax_amt| withholding tax amount
+zero_rated_ecozone| zero-rated sales on ecozones
+zero_rated_purchases| zero-rated purchases
+zero_rated_sales| zero-rated sales
+billing_tp| full name of trading participant
+billing_tp_short_name| short name of trading participant
+facility_type| gen or load
+gesq| gross energy settlement quantities
+gta| gross trading amounts
+llcc| line loss congestion cost
+mtn_facility_type| gen or load
+mw_schedule| energy schedule of mtn; from TODI eps
+region| luzon, visayas, or mindanao
+ac_job_id| job id of additional compensation run
+approved_rate| approved rate of claimant mtn; inputted by the user
+pricing_condition| AP, SEC, or MRU
+ac_amount| additional compensation amount
+ac_mtn| claimant MTN
+allocation_amount| additional compensation allocation amount (with respect to energy consumption)
+total_gesq_per_di_region| total gesq per dispatch interval, region
+allocation_amount_installment| allocation amount with respect to installments
+bilateral_adj_amt| actual bilateral adjustment amount
+spot_qty| gesq-bcq
+ac_amount_installment| ac amount with respect to installment
+nss_flowback| also known as nss allocation, either by LLCC or GESQ
+purchases| purchases
+sales| sales
+sales_to_ecozone| sales to ecozone
+vat_on_ecozones| vat on ecozone
+prev_vat_on_energy| previous vat on energy
+eta| energy trading amount
+line_rental| line rental trading amount
+mfq| market fee quantity
+mfr_config_amount| market fee rate applicable for the billing period
+total_mfq| total market fee rate
+value_added_tax| value added tax amount
+final_llcc| final line loss congestion cost
+gen_bilateral_llcc| gross generator bilateral line loss congestion cost
+gen_gross_llcc| gross generator line loss congestion cost
+load_bilateral_llcc| gross load bilateral line loss congestion cost
+load_gesq| actual gesq of load
+load_gross_llcc| gross llcc of load
+raw_llcc| raw llcc, not the absolute value
+scaling_factor| used to compute for allocations
+total_final_llcc| total final llcc
+total_load_gesq| total load gesq
+total_nss| total nss per dispatch interval
+gen_gesq| actual gesq of generator
+gen_gesq_abs| absolute gesq of generator
+load_gesq_abs| absolute gesq of load
+reserve_category| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+rr_cost| reserve cost recovery amount
+total_gen_gesq| total gesq of generators
+total_gen_gesq_abs| total gesq of generators in absolute value
+total_load_gesq_abs|total gesq of loads in absolute value
+total_rta| total reserve trading amount
+buying_bcq| bilateral contract quantity availed by the buyer bought by
+buying_fedp| purchase price
+buying_lr| line rental of buyer
+buying_mtn| MTN of buyer
+buying_sein| metering point of buyer
+ref_fedp| reference fedp
+selling_bcq| bilateral contract quantity offered by the seller
+selling_fedp| selling price
+selling_lr| line rental of sellers (generators)
+total_sales| total sales
+total_vatable_sales| total vatable sales
+total_zero_rated_purchases| total zero-rated purchases
+nss| net settlement surplus
+total_buyer_bilateral_adj| total buyer bilateral adj amount
+total_gen_gta| total gross trading amount of generators
+total_load_gta| total gross trading amount of loads
+total_seller_bilateral_adj| total seller bilateral adjustment
+reserve_qty| reserve quantity (reserve schedule - rbcq)
+common_block| common blocks of provided reserves
+ga|generator allocation per common block
+highest_mw_schedule| highest mw schedule at a given dispatch interval
+num_of_generators| number of sharing generators per block
+sqty| MW quantity shared by a generator in a common block
+total_rds| total reserve dispatch schedule
+frdp| final reserve dispatch price - from TODI rps
+rbcq| reserve bilateral contract price
+rds| reserve dispatch schedule
+rsq| reserve settlement quantity

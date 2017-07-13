@@ -1,16 +1,16 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
 dispatch_interval|
-nss|
-total_buyer_bilateral_adj|
-total_gen_gta|
-total_load_gta|
-total_seller_bilateral_adj|
+nss| net settlement surplus
+total_buyer_bilateral_adj| total buyer bilateral adj amount
+total_gen_gta| total gross trading amount of generators
+total_load_gta| total gross trading amount of loads
+total_seller_bilateral_adj| total seller bilateral adjustment

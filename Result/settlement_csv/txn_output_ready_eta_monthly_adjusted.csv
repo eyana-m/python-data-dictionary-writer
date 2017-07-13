@@ -1,18 +1,18 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-bcq|
-bilateral_adj_amt|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+bcq| bilateral contract quantity
+bilateral_adj_amt| actual bilateral adjustment amount
+billing_id| identification used by BSMD to identify direct participants billable to WESM
 dispatch_interval|
-eta|
-facility_type|
-gesq|
-gta|
+eta| energy trading amount
+facility_type| gen or load
+gesq| gross energy settlement quantities
+gta| gross trading amounts

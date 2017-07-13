@@ -1,28 +1,28 @@
 Field|Description
 id|
-created_by| author of the entry. system-generated.
-created_date| date of the entry. system-generated.
-modified_by| editor of the entry. system-generated
-modified_date| date that the entry has modified. system-generated
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-bcq|
-bilateral_adj_amt|
-billing_id| identification number used by BSMD to identify direct participants billable to WESM
+group_id| identification of a settlement processing (by process type, by billing period) with adjustments considered
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+bcq| bilateral contract quantity
+bilateral_adj_amt| actual bilateral adjustment amount
+billing_id| identification used by BSMD to identify direct participants billable to WESM
 dispatch_interval|
-facility_type|
-gesq|
-gta|
-mtn|
-nss_flowback|
-purchases|
-region|
-renewable| determines non-renewable and renewable generators. Used in GMR/VAT
-sales|
-sein|
-spot_qty|
-tta|
-withholding_tax| determines generators with or without withholding tax. Used in GMR/VAT.
-zero_rated| determines vatable and non-vatable participants. Used in GMR/VAT.
+facility_type| gen or load
+gesq| gross energy settlement quantities
+gta| gross trading amounts
+mtn| market trading node involved
+nss_flowback| also known as nss allocation, either by LLCC or GESQ
+purchases| purchases
+region| luzon, visayas, or mindanao
+renewable| determines non-renewable and renewable generators; used in GMR/VAT
+sales| sales
+sein| metering point
+spot_qty| gesq-bcq
+tta| total trading amount
+withholding_tax| determines generators with or without withholding tax; used in GMR/VAT.
+zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
