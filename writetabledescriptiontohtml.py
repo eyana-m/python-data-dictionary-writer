@@ -32,7 +32,7 @@ def writeToHTML(path):
     data_table = tables[5]
     data_table.insert_before(extraSoup)
 
-    with open("Result/settlement/tables/"+base, "w") as file:
+    with open("Result/settlement_tables_desc/tables/"+base, "w") as file:
         file.write(str(soup))
 
     print "Done writing to %s..." % (base)

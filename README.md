@@ -2,34 +2,53 @@
 Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages using Python scripts
 
 
-
-
 ### Why did I write this script?
 * I need to create a data dictionary that is useful and informative to the client, but...
 * Too busy (and lazy) to manually copy and paste descriptions of 144 tables to their respective HTML files.
 
-### What can this script do?
+## Quick Start: How to use these scripts?
 
-This mini- project involves the following activities:
+1. Export **table masterlist with descriptions** to csv (Google Sheets). 
+	* Default Directory: `../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv`
+2. Run `writetabledescriptiontohtml.py` 
+	* Write table description to each table html page
+	* Result: `Result/settlement_tables_desc/tables/`
+3. Run `retrieveuniquefields.py`
+	* Retrieve all common and unique fields from all table html pages. Save to CSV
+	* Result: `Result/settlement_csv/unique_fields.csv`
+3. Update `unique_fields.csv`
+	* User can add description to all unique fields in just one csv
+4. Run `writefieldstocsv.py` 
+    * Retrieve fields from table html. Add descriptions of common and unique fields from `unique_fields.csv`
+    * Result: `Result/settlement_csv/*`
+4. (Optional) Update `Result/settlement_csv/*`  csv files
+	* User can modify description for specific table CSVs
+5. Run `writefieldescriptionstohtml.py`
+	* Write field descriptions from table csv to each table html.
+	* Result: `Result/settlement/tables`
+
+
+### Features
+
 
 1. Google Apps Scripts
 - Export Tables Masterlist to CSV
-2. Python
-- Read Html Files from SchemaSpy folder (BeautifulSoup)
-- Read CSV file from Google Sheets
+- Script not in this repository
+
+2. Python 
+- Read html files from SchemaSpy folder (BeautifulSoup)
+- Retrieve select items from html pages (BeautifulSoup)
+- Modify html tag attributes (BeautifulSoup)
+- Read CSV files 
+- Write CSV files
 - Write HTML in HTML Files based on CSV content (Pathlib)
-3. HTML Files
-- Design table description in HTML
+
+
+### Progress Logs
+
 
 Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blob/master/Logs.md)!
 
-### Steps in running the script:
-
-1. Export the table Masterlist in CSV. The masterlist can be found in Google Sheets.
-2. Download or clone the repository.
-3. Ensure that the **Data** folder contains the source files.
-4. Run `python writetabledescription.py` in terminal.
-5. Check the resulting files in **Result** folder.
 
 ### HTML Customizations:
 
@@ -43,7 +62,7 @@ Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blo
 <!----Table Description---->
 ```
 
-`Upcoming` - Line 40: Add `checked` for comments
+`Done` - Line 40: Add `checked` for comments
 
 ```
 <label for='showComments'><input type=checkbox checked id='showComments'>Comments</label>
@@ -71,3 +90,5 @@ Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blo
 7. [Python: How to check if cell in csv file is empty](https://stackoverflow.com/questions/34192705/python-how-to-check-if-cell-in-csv-file-is-empty)
 
 8. [How to install pip in mac](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)
+
+9. [How can I remove DS store files from a git repository](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
