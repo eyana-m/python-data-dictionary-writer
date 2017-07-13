@@ -2,7 +2,7 @@
 Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages using Python scripts
 
 
-### Why did I write this script?
+## Why did I write this script?
 * I need to create a data dictionary that is useful and informative to the client, but...
 * Too busy (and lazy) to manually copy and paste descriptions of 144 tables to their respective HTML files.
 
@@ -37,7 +37,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 	* Result: `Result/settlement/tables`
 
 
-### Features
+## Features
 
 
 1. Google Apps Scripts
@@ -53,13 +53,13 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 - Write HTML in HTML Files based on CSV content (Pathlib)
 
 
-### Progress Logs
+## Progress Logs
 
 
 Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blob/master/Logs.md)!
 
 
-### HTML Customizations:
+## HTML Customizations:
 
 `Done` - Line 92: Add the following tag
 
@@ -77,12 +77,14 @@ Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blo
 <label for='showComments'><input type=checkbox checked id='showComments'>Comments</label>
 ```
 
+## Resources:
+
 ### Libraries used:
 
 1. [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
 2. [Pathlib](https://docs.python.org/3/library/pathlib.html)
 
-### Resources:
+### Stackoverflow resources:
 
 1. [Inserting HTML String into BS4 Object](https://stackoverflow.com/questions/31229981/insert-html-string-into-beautifulsoup-object)
 
