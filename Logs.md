@@ -6,6 +6,8 @@ Add html elements in SchemaSpy pages using Python scripts
 * Set up git
 * Set up python
 
+-----
+
 ### July 8, 2017 - Saturday
 
 * Reviewing [BeautifulSoup4 documentation](https://beautiful-soup-4.readthedocs.io/en/latest/)
@@ -16,6 +18,8 @@ soup.prettify() - displays html code
 soup.title - displays the title tag and contents    
 soup.contents - displays first layer of contents, no children    
 soup.children - displays children     
+
+-----
 
 ### July 10, 2017 - Monday
 
@@ -31,6 +35,8 @@ Next Agenda:
    * Write field descriptions easily:
       * Export fields
       * Import fields with description. Attach to html.
+ 
+-----
 
 ### July 11, 2017 - Tuesday
 
@@ -48,6 +54,8 @@ To do:
 * Refactor code to **integrate** write table and field description jobs
   * Make `settlement_field_description` folder defunct
 * Add field descriptions to 144 tables (lol, the only task I cannot automate)
+
+-----
 
 ### July 12, 2017 - Wednesday
 
@@ -91,6 +99,7 @@ To do:
 * Add descriptions in `index.html` dynamically
 * Fix gitignore
 
+-----
 
 ### July 13, 2017 - Thursday
 
