@@ -1,46 +1,65 @@
 # Python Data Dictionary Writer
 Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages using Python scripts
 
-**Keywords:** Python, Web scraping, CSV, HTML
-
+**Keywords:** Python, Web scraping, CSV, HTML, automation
 
 ## Why did I write this script?
-* I need to create a data dictionary that is useful and informative to the client, but...
-* Too busy (and lazy) to manually copy and paste descriptions of 144 tables to their respective HTML files.
+* To automate my process of inserting descriptions for 139 tables and 2,862 fields in the data dictionary.
+* I also want to optimize my workflow in writing the descriptions for all 2,862 fields by retrieving the unique fields instead.
+
+## What can the scripts do?
+
+1. Add table descriptions dynamically in SchemaSpy index page
+![Index Before](/Screenshots/index-before.png)
+<small>*Original index.html*</small>
+<br><br>
+![Index After](/Screenshots/index-after.png)
+<small>*Resulting index.html with table descriptions for all 139 tables*</small>
+<br><br>
+
+2. Add field descriptions dynamically in each SchemaSpy table page
+![Table Before](/Screenshots/table-before.png)
+<small>*Original cfg_billing_id.html*</small>
+<br><br>
+![Table After](/Screenshots/table-after.png)
+<small>*Resulting cfg_billing_id.html with its table description (same with the index) and field descriptions*</small>
+<br><br>
+
+
 
 ## Quick Start
 
 1. Export table list to CSV (c/o Google Sheets)
-2. Update table descriptions of index and table pages using `writeTableDescriptiontoHTML.py`
-3. If no more fields yet: 
-   * Retrieve all unique fields to CSV using `retrieveUniqueFields.py`
-   * Write fields and field descriptions to CSV using `writeFieldsToCSV.py`
-4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writeFieldDescriptionsToHTML.py`
+2. Update table descriptions of index and table pages using `writetabledescriptiontohtml.py`
+3. If no fields yet:
+   * Retrieve and save all unique fields to CSV using `retrieveuniquefields.py`
+   * Write fields and field descriptions to CSV using `writefieldstocsv.py`
+4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writefielddescriptionstohtml.py`
 
 ## TL;DR version: How to use these scripts?
 
-1. Export **table masterlist with descriptions** to csv (Google Sheets). 
+1. Export **table masterlist with descriptions** to csv (Google Sheets).
 	* Default Directory: `../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv`
-	
-2. Run `writeTableDescriptiontoHTML.py`
+
+2. Run `writetabledescriptiontohtml.py`
 	* Write table description to each table html page
 	* Result: `Result/settlement_tables_desc/tables/`
-	
-3. Run `retrieveUniqueFields.py`
+
+3. Run `retrieveuniquefields.py`
 	* Retrieve all common and unique fields from all table html pages. Save to CSV
 	* Result: `Result/settlement_csv/unique_fields.csv`
-	
+
 3. Update `unique_fields.csv`
 	* User can add description to all unique fields in just one CSV file
-	
-4. Run `writefieldstocsv.py` 
+
+4. Run `writefieldstocsv.py`
     * Retrieve fields from table html. Add descriptions of common and unique fields from `unique_fields.csv`
     * Result: `Result/settlement_csv/*`
-    
-5. (Optional) Update `Result/settlement_csv/*`  csv files
+
+5. (Optional) Update `Result/settlement_csv/*` csv files
 	* User can modify descriptions for specific table CSV files
-	
-6. Run `writeFieldDescriptionsToHTML.py`
+
+6. Run `writefielddescriptionstohtml.py`
 	* HTML Source: `Result/settlement_tables_desc/tables/`
 	* Content Source: `Result/settlement_csv/*`
 	* Write field descriptions from table csv to each table html.
@@ -53,17 +72,16 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 - Export Tables Masterlist to CSV
 - Script not in this repository
 
-2. Python 
+2. Python
 - Read html files from SchemaSpy folder (BeautifulSoup)
 - Retrieve select items from html pages (BeautifulSoup)
 - Modify html tag attributes (BeautifulSoup)
-- Read CSV files 
+- Read CSV files
 - Write CSV files
 - Write HTML in HTML Files based on CSV content (Pathlib)
 
 
 ## Project Logs
-
 
 Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blob/master/Logs.md)!
 
