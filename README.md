@@ -1,6 +1,8 @@
 # Python Data Dictionary Writer
 Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages using Python scripts
 
+**Keywords:** Python, Web scraping, CSV, HTML
+
 
 ## Why did I write this script?
 * I need to create a data dictionary that is useful and informative to the client, but...
@@ -19,26 +21,33 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 1. Export **table masterlist with descriptions** to csv (Google Sheets). 
 	* Default Directory: `../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv`
-2. Run `writetabledescriptiontohtml.py` 
+	
+2. Run `writeTableDescriptiontoHTML.py`
 	* Write table description to each table html page
 	* Result: `Result/settlement_tables_desc/tables/`
-3. Run `retrieveuniquefields.py`
+	
+3. Run `retrieveUniqueFields.py`
 	* Retrieve all common and unique fields from all table html pages. Save to CSV
 	* Result: `Result/settlement_csv/unique_fields.csv`
+	
 3. Update `unique_fields.csv`
-	* User can add description to all unique fields in just one csv
+	* User can add description to all unique fields in just one CSV file
+	
 4. Run `writefieldstocsv.py` 
     * Retrieve fields from table html. Add descriptions of common and unique fields from `unique_fields.csv`
     * Result: `Result/settlement_csv/*`
-4. (Optional) Update `Result/settlement_csv/*`  csv files
-	* User can modify description for specific table CSVs
-5. Run `writefieldescriptionstohtml.py`
+    
+5. (Optional) Update `Result/settlement_csv/*`  csv files
+	* User can modify descriptions for specific table CSV files
+	
+6. Run `writeFieldDescriptionsToHTML.py`
+	* HTML Source: `Result/settlement_tables_desc/tables/`
+	* Content Source: `Result/settlement_csv/*`
 	* Write field descriptions from table csv to each table html.
 	* Result: `Result/settlement/tables`
 
 
-## Features
-
+## Things I learned from this mini project:
 
 1. Google Apps Scripts
 - Export Tables Masterlist to CSV
@@ -53,7 +62,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 - Write HTML in HTML Files based on CSV content (Pathlib)
 
 
-## Progress Logs
+## Project Logs
 
 
 Check out my [logs](https://github.com/eyana-m/python-data-dictionary-writer/blob/master/Logs.md)!
