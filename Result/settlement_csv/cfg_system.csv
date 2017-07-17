@@ -8,6 +8,6 @@ version|
 effective_end_date| end date of configuration
 effective_start_date| start date of configuration
 name| configuration name; for SOW9: CEILING_PRICE, FLOOR_PRICE, MAX_SCHEDS_QTY, MIN_SCHEDS_QTY, MAX_GESQ_QTY, MIN_GESQ_QTY
-value|
+value| corresponding value of the configuration
 
 

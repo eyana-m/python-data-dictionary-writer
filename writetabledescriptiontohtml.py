@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 def getTableDescription(table):
-    with open("../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv", "rb") as f:
+    with open("../../Google Drive/Python/CSV_dump/Settlement-Tables-Descriptions.csv", "rU") as f:
         reader = csv.reader(f)
         for row in reader:
             if row[0] == table:
