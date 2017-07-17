@@ -1,5 +1,5 @@
 Field|Description
-id|
+id| unique identifier
 created_datetime|
 details| details of validation error
 error_code| code from validation error

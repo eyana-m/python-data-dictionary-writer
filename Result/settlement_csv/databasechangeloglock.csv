@@ -1,5 +1,5 @@
 Field|Description
-id|
+id| unique identifier
 locked|
 lockgranted|
 lockedby|

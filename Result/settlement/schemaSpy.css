@@ -8,6 +8,10 @@ body  {
   padding: 0px;
 }
 
+.dataTable tbody tr td.detail:nth-child(6) {
+  word-break: break-word;
+}
+
 /* background must be specified for it to propagate into diagrams */
 .content {
   margin: 0px;
