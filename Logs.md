@@ -115,3 +115,21 @@ Workflow so far:
    * Retrieve all unique fields to CSV using `retrieveUniqueFields.py`
    * Write fields to CSV using `writeFieldsToCSV.py`
 4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writeFieldDescriptionsToHTML.py`
+
+
+----
+
+### October 16, 2017 - Monday
+
+* Added tables from SOW10 (186 tables)
+
+Workflow so far (with SOW10):
+
+1. Export table list with descriptions to CSV (c/o Google Sheets)
+2. Update table descriptions of index and table pages using `writeTableDescriptiontoHTML.py`
+3. If no more fields yet: 
+   * Retain SOW9 unique fields `unique_fields-sow9.csv`
+   * Retrieve all new SOW10 fields to CSV using `retrievenewfields.py`
+   * Write SOW9 and SOW10 fields to CSV using `writeFieldsToCSV.py`
+4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writeFieldDescriptionsToHTML.py`
+
