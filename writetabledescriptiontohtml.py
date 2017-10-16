@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 
-def getTableDescription(table,file_name):
-    with open("../../Google Drive/Python/CSV_dump/"+file_name, "rU") as f:
+def getTableDescription(table,csv_source_path):
+    with open(csv_source_path,"rU") as f:
         reader = csv.reader(f)
         for row in reader:
             if row[0] == table:
@@ -13,13 +13,13 @@ def getTableDescription(table,file_name):
                 break;
 
 
-def writeToHTML(path, file_name):
+def writeToHTML(path, csv_source_path):
     base=os.path.basename(path)
     with open(path) as inf:
         txt = inf.read()
         soup = BeautifulSoup(txt, 'html.parser')
 
-    description = getTableDescription(os.path.splitext(base)[0],file_name)
+    description = getTableDescription(os.path.splitext(base)[0],csv_source_path)
 
     table_description_text = """<br><div><strong>Description: </strong> %s </div> <br></br> """ % (description)
 
@@ -36,7 +36,7 @@ def writeToHTML(path, file_name):
     print "Done writing table descriptions to %s..."% (base)
 
 
-def writeToIndex(file_name):
+def writeToIndex(csv_source_path):
 
     source = "Data/settlement/index.html"
     with open(source) as inf:
@@ -49,7 +49,7 @@ def writeToIndex(file_name):
     table_names = table_list.find_all('a')
 
     for table in table_names:
-        desc = getTableDescription(table.string,file_name)
+        desc = getTableDescription(table.string,csv_source_path)
         mother_table = table.parent.parent
         comment_section = mother_table.find_all("td", class_="comment detail")
         for c in comment_section:
@@ -72,17 +72,21 @@ source = "Data/settlement/tables"
 
 pathlist = Path(source).glob('**/*.html')
 
-file_name= raw_input("Please enter file_name: ")
-print "Table Description Source: %s"%(file_name)
+#file_name= raw_input("Please enter file name: ")
+#print "Table Description Source: %s"%(file_name)
+
+
+csv_source_path = raw_input("Please enter csv_source_path: ")
+print "Table Description Source: %s"%(csv_source_path)
 
 count = 0;
 
 for path in pathlist:
     path_in_str = str(path)
-    writeToHTML(path_in_str, file_name)
+    writeToHTML(path_in_str, csv_source_path)
     count  = count + 1;
 
-writeToIndex(file_name)
+writeToIndex(csv_source_path)
 
 print "---------------------------------------------------------------"
 print "Completed job for %d tables. Check Results folder."%(count)
