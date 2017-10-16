@@ -1,12 +1,13 @@
 Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
 version|
-effective_end_date| end date of configuration
-effective_start_date| start date of configuration
-sein| metering point
-billing_id| identification used by BSMD to identify direct participants billable to WESM
+effective_end_date|
+effective_start_date|
+sein|
+billing_id|
 |
+tp_short_name|

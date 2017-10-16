@@ -1,13 +1,11 @@
 Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
 version|
-effective_end_date| end date of configuration
-effective_start_date| start date of configuration
-name| configuration name; for SOW9: CEILING_PRICE, FLOOR_PRICE, MAX_SCHEDS_QTY, MIN_SCHEDS_QTY, MAX_GESQ_QTY, MIN_GESQ_QTY
-value| corresponding value of the configuration
-
-
+effective_end_date|
+effective_start_date|
+name|
+value|

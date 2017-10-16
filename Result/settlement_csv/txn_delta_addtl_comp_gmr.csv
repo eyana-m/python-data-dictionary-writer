@@ -1,13 +1,13 @@
 Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
 version|
-ac_group_id| group id of additional compensation run
-billing_id| identification used by BSMD to identify direct participants billable to WESM
-billing_period_end| end date of the billing period; usually on the 25th of the current month
-billing_period_start| start date of the billing period; usually on the 26th of last month
-run_date| date the job was run
-vat| vat amount (vat on energy + vat on purchases)
+ac_group_id|
+billing_id|
+billing_period_end|
+billing_period_start|
+run_date|
+vat|

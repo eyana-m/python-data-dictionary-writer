@@ -1,25 +1,25 @@
 Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
 version|
-group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
-job_id| identification of a settlement processing based from settlement-ready meter data
-run_date| date the job was run
-bcq| bilateral contract quantity
-buyer_billing_id| billing id of the bcq buyer
-buying_bcq| bilateral contract quantity availed by the buyer bought by
-buying_fedp| purchase price
-buying_lr| line rental of buyer
-buying_mtn| MTN of buyer
-buying_sein| metering point of buyer
-dispatch_interval| for SOW9: default is 5 minutes
-ref_fedp| reference fedp
-reference_mtn| reference mtn. usually the same with seller_mtn
-seller_billing_id| billing ID of seller
-seller_mtn| MTN of seller
-selling_bcq| bilateral contract quantity offered by the seller
-selling_fedp| selling price
-selling_lr| line rental of sellers (generators)
+group_id|
+job_id|
+run_date|
+bcq|
+buyer_billing_id|
+buying_bcq|
+buying_fedp|
+buying_lr|
+buying_mtn|
+buying_sein|
+dispatch_interval|
+ref_fedp|
+reference_mtn|
+seller_billing_id|
+seller_mtn|
+selling_bcq|
+selling_fedp|
+selling_lr|

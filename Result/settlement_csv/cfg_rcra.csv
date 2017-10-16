@@ -1,13 +1,13 @@
 Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
 version|
-cost_recovery_mode| For SOW9: CR_GESQ_GEN_ACTUAL, CR_GESQ_LOAD_ACTUAL, CR_GESQ_GEN_LOAD, CR_RUNWAY
-effective_end_date| end date of configuration
-effective_start_date| start date of configuration
-market_product_id| reserve category ID in registration (CRSS Ph 1.0)
-reserve_category_code| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
-reserve_category_name| corresponding name of reserve category
+cost_recovery_mode|
+effective_end_date|
+effective_start_date|
+market_product_id|
+reserve_category_code|
+reserve_category_name|

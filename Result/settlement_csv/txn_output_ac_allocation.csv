@@ -1,28 +1,28 @@
 Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
+id|
+created_by|
+created_date|
+modified_by|
+modified_date|
 version|
-ac_group_id| group id of additional compensation run
-ac_job_id| job id of additional compensation run
-approved_rate| approved rate of claimant mtn; inputted by the user
-billing_id| identification used by BSMD to identify direct participants billable to WESM
-billing_period_end| end date of the billing period; usually on the 25th of the current month
-billing_period_start| start date of the billing period; usually on the 26th of last month
-group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
-job_id| identification of a settlement processing based from settlement-ready meter data
-pricing_condition| AP, SEC, or MRU
-run_date| date the job was run
-virtual_id| identification of direct participants in CRSS registration
-ac_amount| additional compensation amount
-ac_mtn| claimant MTN
-allocation_amount| additional compensation allocation amount (with respect to energy consumption)
-dispatch_interval| for SOW9: default is 5 minutes
-facility_type| gen or load
-gesq| gross energy settlement quantities
-total_gesq_per_di_region| total gesq per dispatch interval, region
-mtn| market trading node involved
-region| luzon, visayas, or mindanao
-sein| metering point
+ac_group_id|
+ac_job_id|
+approved_rate|
+billing_id|
+billing_period_end|
+billing_period_start|
+group_id|
+job_id|
+pricing_condition|
+run_date|
+virtual_id|
+ac_amount|
+ac_mtn|
+allocation_amount|
+dispatch_interval|
+facility_type|
+gesq|
+total_gesq_per_di_region|
+mtn|
+region|
+sein|
