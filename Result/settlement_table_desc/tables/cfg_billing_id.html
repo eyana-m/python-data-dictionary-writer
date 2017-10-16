@@ -101,7 +101,7 @@ google_color_text = "000000";
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
 <td class="primaryKey" title="Primary Key">id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -110,7 +110,13 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail">
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tr class="relative odd" valign="top">
+<tr class="relative even" valign="top">
+<td class="relatedTable detail" title="map_mtn_billing_id.billing_id refs cfg_billing_id.id via fktqpi0tmgjdt0meror0v3jiev2"><a href="map_mtn_billing_id.html">map_mtn_billing_id</a><span class="relatedKey">.billing_id</span>
+</td>
+<td class="constraint detail">fktqpi0tmgjdt0meror0v3jiev2<span title="Restrict delete:
+ Parent cannot be deleted if children exist"> R</span></td>
+</tr>
+<tr class="relative even" valign="top">
 <td class="relatedTable detail" title="map_sein_billing_id.billing_id refs cfg_billing_id.id via fkn0dh5k1dpl3lya0cp81wtm2il"><a href="map_sein_billing_id.html">map_sein_billing_id</a><span class="relatedKey">.billing_id</span>
 </td>
 <td class="constraint detail">fkn0dh5k1dpl3lya0cp81wtm2il<span title="Restrict delete:
@@ -121,7 +127,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">created_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -132,7 +138,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">created_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -143,7 +149,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">modified_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -154,7 +160,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">modified_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -165,7 +171,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">version</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -176,7 +182,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -187,7 +193,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">direct_participant</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -198,7 +204,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">effective_end_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -209,7 +215,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="indexedColumn" title="Indexed">effective_start_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -220,21 +226,10 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">renewable</td>
 <td class="detail">bpchar</td>
 <td align="right" class="detail">1</td>
-<td align="center" class="detail"></td>
-<td align="center" class="detail"></td>
-<td class="detail"></td>
-<td class="detail"></td>
-<td class="detail"> </td>
-<td class="comment detail"></td>
-</tr>
-<tr class="even">
-<td class="detail">tp_address</td>
-<td class="detail">varchar</td>
-<td align="right" class="detail">255</td>
 <td align="center" class="detail" title="nullable"> √ </td>
 <td align="center" class="detail"></td>
 <td align="right" class="detail">null</td>
@@ -243,6 +238,17 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 <tr class="odd">
+<td class="detail">tp_address</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail"></td>
+<td align="center" class="detail"></td>
+<td class="detail"></td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
+<tr class="even">
 <td class="detail">tp_short_name</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -253,7 +259,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">trading_participant</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -264,7 +270,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">virtual_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -275,18 +281,18 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">withholding_tax</td>
 <td class="detail">bpchar</td>
 <td align="right" class="detail">1</td>
+<td align="center" class="detail" title="nullable"> √ </td>
 <td align="center" class="detail"></td>
-<td align="center" class="detail"></td>
-<td class="detail"></td>
+<td align="right" class="detail">null</td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">zero_rated</td>
 <td class="detail">bpchar</td>
 <td align="right" class="detail">1</td>
@@ -297,8 +303,41 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
+<tr class="odd">
+<td class="detail">is_default_billing_id</td>
+<td class="detail">bpchar</td>
+<td align="right" class="detail">1</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
+<tr class="even">
+<td class="detail">tp_membership_type</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
+<tr class="odd">
+<td class="detail">tp_facility_type</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="17 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="20 columns">Table contained 93 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -328,8 +367,9 @@ google_color_text = "000000";
 </div>
 <table border="0" width="100%"><tr><td class="container">
 <br/><form action="get"><b>Close relationships:</b></form><map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area alt="" coords="325,5,483,289" href="map_sein_billing_id.html" id="node1" shape="rect" title="map_sein_billing_id"/>
-<area alt="" coords="5,208,280,656" href="cfg_billing_id.html" id="node2" shape="rect" title="cfg_billing_id"/>
+<area alt="" coords="336,5,493,312" href="map_mtn_billing_id.html" id="node1" shape="rect" title="map_mtn_billing_id"/>
+<area alt="" coords="6,346,290,862" href="cfg_billing_id.html" id="node2" shape="rect" title="cfg_billing_id"/>
+<area alt="" coords="335,329,494,636" href="map_sein_billing_id.html" id="node3" shape="rect" title="map_sein_billing_id"/>
 </map>
 <a name="diagram"><img align="left" alt="" border="0" class="diagram" id="oneDegreeImg" src="../diagrams/cfg_billing_id.1degree.png" usemap="#oneDegreeRelationshipsDiagram"/></a>
 </td></tr></table>

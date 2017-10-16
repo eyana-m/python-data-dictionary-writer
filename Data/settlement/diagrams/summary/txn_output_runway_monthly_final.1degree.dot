@@ -1,4 +1,4 @@
-// dot 2.36.0 on Mac OS X 10.12.5
+// dot 2.36.0 on Mac OS X 10.12.6
 // SchemaSpy rev 590
 digraph "txn_output_runway_monthly_final" {
   graph [
@@ -37,7 +37,8 @@ digraph "txn_output_runway_monthly_final" {
       <TR><TD PORT="rr_cost" COLSPAN="3" ALIGN="LEFT">rr_cost</TD></TR>
       <TR><TD PORT="scaling_factor" COLSPAN="3" ALIGN="LEFT">scaling_factor</TD></TR>
       <TR><TD PORT="total_rta" COLSPAN="3" ALIGN="LEFT">total_rta</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD PORT="region_group" COLSPAN="3" ALIGN="LEFT">region_group</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">167 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/txn_output_runway_monthly_final.html"
     tooltip="txn_output_runway_monthly_final"

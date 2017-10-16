@@ -107,7 +107,7 @@ google_color_text = "000000";
 <td align="right" class="detail">19</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail" title="Automatically updated by the database"> √ </td>
-<td align="right" class="detail">nextval('settlement.txn_output_ready_process_sfactor_monthly_adjusted_id_seq'::regclass)</td>
+<td align="right" class="detail">nextval('txn_output_ready_process_sfactor_monthly_adjusted_id_seq'::regclass)</td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"></td>
@@ -169,8 +169,8 @@ google_color_text = "000000";
 </tr>
 <tr class="even">
 <td class="indexedColumn" title="Indexed">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -344,7 +344,7 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="22 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="22 columns">Table contained 0 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -365,7 +365,13 @@ google_color_text = "000000";
 <td class="constraint" style="text-align:left;">txn_output_ready_process_sfactor_monthly_adjustedpk</td>
 </tr>
 <tr>
-<td class="indexedColumn">dispatch_interval + sein + region + reserve_category + common_block + group_id + mtn</td>
+<td class="indexedColumn">dispatch_interval + group_id + sein + region + reserve_category + common_block + mtn</td>
+<td class="detail">Must be unique</td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="constraint" style="text-align:left;">txn_output_ready_process_sfac_dispatch_interval_group_id_se_idx</td>
+</tr>
+<tr>
+<td class="indexedColumn">dispatch_interval + group_id + sein + region + reserve_category + common_block + mtn</td>
 <td class="detail">Must be unique</td>
 <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">uk_or_process_sfactor_madj</td>

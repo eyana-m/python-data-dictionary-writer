@@ -1,4 +1,4 @@
-// dot 2.36.0 on Mac OS X 10.12.5
+// dot 2.36.0 on Mac OS X 10.12.6
 // SchemaSpy rev 590
 digraph "cfg_charge_id" {
   graph [
@@ -31,7 +31,7 @@ digraph "cfg_charge_id" {
       <TR><TD PORT="charge_id_label" COLSPAN="3" ALIGN="LEFT">charge_id_label</TD></TR>
       <TR><TD PORT="effective_end_date" COLSPAN="3" ALIGN="LEFT">effective_end_date</TD></TR>
       <TR><TD PORT="effective_start_date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">effective_start_date</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">14 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/cfg_charge_id.html"
     tooltip="cfg_charge_id"

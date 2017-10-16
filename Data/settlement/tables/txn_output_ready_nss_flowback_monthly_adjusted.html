@@ -107,7 +107,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail' align='right'>19</td>
  <td class='detail' align='center'></td>
  <td class='detail' align='center' title='Automatically updated by the database'>&nbsp;&radic;&nbsp;</td>
- <td class='detail' align='right'>nextval('settlement.txn_output_ready_nss_flowback_monthly_adjusted_id_seq'::regclass)</td>
+ <td class='detail' align='right'>nextval('txn_output_ready_nss_flowback_monthly_adjusted_id_seq'::regclass)</td>
  <td class='detail'></td>
  <td class='detail'> </td>
  <td class='comment detail'></td>
@@ -169,8 +169,8 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 <tr class='even'>
  <td class='indexedColumn' title='Indexed'>group_id</td>
- <td class='detail'>int8</td>
- <td class='detail' align='right'>19</td>
+ <td class='detail'>varchar</td>
+ <td class='detail' align='right'>255</td>
  <td class='detail' align='center'></td>
  <td class='detail' align='center'></td>
  <td class='detail'></td>
@@ -354,8 +354,19 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'></td>
 </tr>
+<tr class='odd'>
+ <td class='indexedColumn' title='Indexed'>region_group</td>
+ <td class='detail'>varchar</td>
+ <td class='detail' align='right'>255</td>
+ <td class='detail' align='center'></td>
+ <td class='detail' align='center'></td>
+ <td class='detail'></td>
+ <td class='detail'></td>
+ <td class='detail'> </td>
+ <td class='comment detail'></td>
+</tr>
 </table>
-<p title='23 columns'>Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p/>
+<p title='24 columns'>Table contained 529 rows at Mon Oct 16 11:28 PHT 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>
@@ -376,9 +387,15 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   <td class='constraint' style='text-align:left;'>txn_output_ready_nss_flowback_monthly_adjustedpk</td>
  </tr>
  <tr>
-  <td class='indexedColumn'>dispatch_interval + billing_id + group_id</td>
+  <td class='indexedColumn'>dispatch_interval + billing_id + region_group + group_id</td>
   <td class='detail'>Must be unique</td>
-  <td class='detail' style='text-align:left;'><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+  <td class='detail' style='text-align:left;'><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+  <td class='constraint' style='text-align:left;'>txn_output_ready_nss_flowback_dispatch_interval_billing_id__idx</td>
+ </tr>
+ <tr>
+  <td class='indexedColumn'>dispatch_interval + billing_id + region_group + group_id</td>
+  <td class='detail'>Must be unique</td>
+  <td class='detail' style='text-align:left;'><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
   <td class='constraint' style='text-align:left;'>uk_or_output_nss_flowback_madj</td>
  </tr>
 </table>

@@ -1,4 +1,4 @@
-// dot 2.36.0 on Mac OS X 10.12.5
+// dot 2.36.0 on Mac OS X 10.12.6
 // SchemaSpy rev 590
 digraph "txn_process_spotqty_monthly_adjusted" {
   graph [
@@ -48,7 +48,8 @@ digraph "txn_process_spotqty_monthly_adjusted" {
       <TR><TD PORT="tta" COLSPAN="3" ALIGN="LEFT">tta</TD></TR>
       <TR><TD PORT="withholding_tax" COLSPAN="3" ALIGN="LEFT">withholding_tax</TD></TR>
       <TR><TD PORT="zero_rated" COLSPAN="3" ALIGN="LEFT">zero_rated</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD PORT="region_group" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">region_group</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">107 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/txn_process_spotqty_monthly_adjusted.html"
     tooltip="txn_process_spotqty_monthly_adjusted"

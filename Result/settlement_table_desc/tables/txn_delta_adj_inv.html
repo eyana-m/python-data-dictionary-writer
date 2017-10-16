@@ -168,9 +168,9 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 <tr class="odd">
-<td class="detail">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<td class="indexedColumn" title="Indexed">group_id</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -201,7 +201,7 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 <tr class="even">
-<td class="detail">billing_id</td>
+<td class="indexedColumn" title="Indexed">billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
 <td align="center" class="detail" title="nullable"> √ </td>
@@ -212,7 +212,7 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 <tr class="odd">
-<td class="detail">billing_period_end</td>
+<td class="indexedColumn" title="Indexed">billing_period_end</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
 <td align="center" class="detail"></td>
@@ -223,7 +223,7 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 <tr class="even">
-<td class="detail">billing_period_start</td>
+<td class="indexedColumn" title="Indexed">billing_period_start</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
 <td align="center" class="detail"></td>
@@ -267,7 +267,7 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="15 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="15 columns">Table contained 211 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -286,6 +286,12 @@ google_color_text = "000000";
 <td class="detail">Primary key</td>
 <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">txn_delta_adj_invpk</td>
+</tr>
+<tr>
+<td class="indexedColumn">billing_period_start + billing_period_end + group_id + billing_id</td>
+<td class="detail">Performance</td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="constraint" style="text-align:left;">idx_delta_adj_inv</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></table>
 </div>

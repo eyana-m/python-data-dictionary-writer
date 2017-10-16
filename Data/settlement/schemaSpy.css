@@ -62,8 +62,6 @@ h1 {
   background: #A9AB96;
 }
 
-
-
 .detail {
   padding: 0px 4px;
 }
@@ -145,8 +143,6 @@ table {
   display: none;
   text-align: left;
   padding: 0px 4px;
-  font-size: 12px;
-  font-style: italic;
 }
 
 .impliedNotOrphan {
@@ -279,5 +275,3 @@ div.spacer {
 #header li:hover a {
   background-position:100% -150px;
 }
-
-

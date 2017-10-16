@@ -1,4 +1,4 @@
-// dot 2.36.0 on Mac OS X 10.12.5
+// dot 2.36.0 on Mac OS X 10.12.6
 // SchemaSpy rev 590
 digraph "txn_output_ready_eta_monthly_adjusted" {
   graph [
@@ -38,7 +38,7 @@ digraph "txn_output_ready_eta_monthly_adjusted" {
       <TR><TD PORT="facility_type" COLSPAN="3" ALIGN="LEFT">facility_type</TD></TR>
       <TR><TD PORT="gesq" COLSPAN="3" ALIGN="LEFT">gesq</TD></TR>
       <TR><TD PORT="gta" COLSPAN="3" ALIGN="LEFT">gta</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">529 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/txn_output_ready_eta_monthly_adjusted.html"
     tooltip="txn_output_ready_eta_monthly_adjusted"

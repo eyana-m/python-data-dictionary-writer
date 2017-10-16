@@ -1,4 +1,4 @@
-// dot 2.36.0 on Mac OS X 10.12.5
+// dot 2.36.0 on Mac OS X 10.12.6
 // SchemaSpy rev 590
 digraph "txn_bilateral_energy_qty_monthly_final" {
   graph [
@@ -43,12 +43,14 @@ digraph "txn_bilateral_energy_qty_monthly_final" {
       <TR><TD PORT="llcp" COLSPAN="3" ALIGN="LEFT">llcp</TD></TR>
       <TR><TD PORT="lowest_fedp_mlc_mcc" COLSPAN="3" ALIGN="LEFT">lowest_fedp_mlc_mcc</TD></TR>
       <TR><TD PORT="reference_mtn" COLSPAN="3" ALIGN="LEFT">reference_mtn</TD></TR>
-      <TR><TD PORT="sein" COLSPAN="3" ALIGN="LEFT">sein</TD></TR>
       <TR><TD PORT="seller_bilateral_adj_amt" COLSPAN="3" ALIGN="LEFT">seller_bilateral_adj_amt</TD></TR>
       <TR><TD PORT="seller_bilateral_llcc" COLSPAN="3" ALIGN="LEFT">seller_bilateral_llcc</TD></TR>
       <TR><TD PORT="seller_billing_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">seller_billing_id</TD></TR>
-      <TR><TD PORT="seller_mtn" COLSPAN="3" ALIGN="LEFT">seller_mtn</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD PORT="seller_mtn" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">seller_mtn</TD></TR>
+      <TR><TD PORT="region" COLSPAN="3" ALIGN="LEFT">region</TD></TR>
+      <TR><TD PORT="region_group" COLSPAN="3" ALIGN="LEFT">region_group</TD></TR>
+      <TR><TD PORT="pricing_flag" COLSPAN="3" ALIGN="LEFT">pricing_flag</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">30 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/txn_bilateral_energy_qty_monthly_final.html"
     tooltip="txn_bilateral_energy_qty_monthly_final"

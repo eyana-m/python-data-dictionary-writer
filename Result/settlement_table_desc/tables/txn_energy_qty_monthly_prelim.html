@@ -107,7 +107,7 @@ google_color_text = "000000";
 <td align="right" class="detail">19</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail" title="Automatically updated by the database"> √ </td>
-<td align="right" class="detail">nextval('settlement.txn_energy_qty_monthly_prelim_id_seq'::regclass)</td>
+<td align="right" class="detail">nextval('txn_energy_qty_monthly_prelim_id_seq'::regclass)</td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"></td>
@@ -169,8 +169,8 @@ google_color_text = "000000";
 </tr>
 <tr class="even">
 <td class="detail">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -377,17 +377,6 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 <tr class="odd">
-<td class="detail">market_fee</td>
-<td class="detail">numeric</td>
-<td align="right" class="detail">23,11</td>
-<td align="center" class="detail" title="nullable"> √ </td>
-<td align="center" class="detail"></td>
-<td align="right" class="detail">null</td>
-<td class="detail"></td>
-<td class="detail"> </td>
-<td class="comment detail"></td>
-</tr>
-<tr class="even">
 <td class="indexedColumn" title="Indexed">mtn</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -398,7 +387,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">mtn_facility_type</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -409,7 +398,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">mw_schedule</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -420,18 +409,18 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">region</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
-<td align="center" class="detail" title="nullable"> √ </td>
 <td align="center" class="detail"></td>
-<td align="right" class="detail">null</td>
+<td align="center" class="detail"></td>
+<td class="detail"></td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">renewable</td>
 <td class="detail">bpchar</td>
 <td align="right" class="detail">1</td>
@@ -442,7 +431,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">sein</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -453,7 +442,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">virtual_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -464,7 +453,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">withholding_tax</td>
 <td class="detail">bpchar</td>
 <td align="right" class="detail">1</td>
@@ -475,7 +464,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">zero_rated</td>
 <td class="detail">bpchar</td>
 <td align="right" class="detail">1</td>
@@ -486,8 +475,41 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
+<tr class="even">
+<td class="detail">region_group</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail"></td>
+<td align="center" class="detail"></td>
+<td class="detail"></td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
+<tr class="odd">
+<td class="detail">pricing_flag</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
+<tr class="even">
+<td class="detail">market_fee_qty</td>
+<td class="detail">numeric</td>
+<td align="right" class="detail">23,11</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"></td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="35 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="37 columns">Table contained 100 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
