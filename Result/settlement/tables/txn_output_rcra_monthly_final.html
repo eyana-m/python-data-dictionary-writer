@@ -107,7 +107,7 @@ google_color_text = "000000";
 <td align="right" class="detail">19</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail" title="Automatically updated by the database"> √ </td>
-<td align="right" class="detail">nextval('settlement.txn_output_rcra_monthly_final_id_seq'::regclass)</td>
+<td align="right" class="detail">nextval('txn_output_rcra_monthly_final_id_seq'::regclass)</td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"> unique identifier</td>
@@ -169,8 +169,8 @@ google_color_text = "000000";
 </tr>
 <tr class="even">
 <td class="detail">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -376,8 +376,19 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> total reserve trading amount</td>
 </tr>
+<tr class="odd">
+<td class="detail">region_group</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail"></td>
+<td align="center" class="detail"></td>
+<td class="detail"></td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"> luzon&amp;vizayas, or mindanao</td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="25 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="26 columns">Table contained 181,779 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -398,7 +409,13 @@ google_color_text = "000000";
 <td class="constraint" style="text-align:left;">txn_output_rcra_monthly_finalpk</td>
 </tr>
 <tr>
-<td class="indexedColumn">dispatch_interval + billing_id + region + reserve_category</td>
+<td class="indexedColumn">dispatch_interval + billing_id + reserve_category + region</td>
+<td class="detail">Must be unique</td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="constraint" style="text-align:left;">txn_output_rcra_monthly_final_dispatch_interval_billing_id__idx</td>
+</tr>
+<tr>
+<td class="indexedColumn">dispatch_interval + billing_id + reserve_category + region</td>
 <td class="detail">Must be unique</td>
 <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">uk_output_rcra_mfinal</td>

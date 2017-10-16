@@ -1,23 +1,23 @@
 Field|Description
-id|
+id| unique identifier
 |
 |
-created_by|
-created_date|
-modified_by|
-modified_date|
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-billing_id|
-direct_participant|
-effective_end_date|
-effective_start_date|
-renewable|
-tp_address|
-tp_short_name|
-trading_participant|
-virtual_id|
-withholding_tax|
-zero_rated|
-is_default_billing_id|
-tp_membership_type|
-tp_facility_type|
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+direct_participant| name of the direct participant who owns the billing ID
+effective_end_date| end date of configuration
+effective_start_date| start date of configuration
+renewable| determines non-renewable and renewable generators; used in GMR/VAT
+tp_address| address of trading participant; inputted by the user
+tp_short_name| short name of the trading participant associated with the billing ID (could be direct or indirect); inputted by the user
+trading_participant| full name of the trading participant associated with the billing ID (could be direct or indirect); inputted by the user
+virtual_id| identification of direct participants in CRSS registration
+withholding_tax| determines generators with or without withholding tax; used in GMR/VAT.
+zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
+is_default_billing_id| determines the default billing id of a trading participant with multiple billng IDs
+tp_membership_type| DIRECT or INDIRECT
+tp_facility_type| GEN OR LOAD

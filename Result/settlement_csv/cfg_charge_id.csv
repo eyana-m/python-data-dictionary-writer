@@ -1,11 +1,11 @@
 Field|Description
-id|
-created_by|
-created_date|
-modified_by|
-modified_date|
+id| unique identifier
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-charge_id|
-charge_id_label|
-effective_end_date|
-effective_start_date|
+charge_id| identification for each settlement or billing calculation; used in AMS INV and MF files.
+charge_id_label| full name of charge IDs
+effective_end_date| end date of configuration
+effective_start_date| start date of configuration

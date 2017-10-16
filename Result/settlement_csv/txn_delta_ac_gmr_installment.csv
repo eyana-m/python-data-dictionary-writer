@@ -1,11 +1,11 @@
 Field|Description
-billing_id|
-billing_period_end|
-billing_period_start|
-payment_num|
-created_by|
-created_date|
-modified_by|
-modified_date|
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_start| start date of the billing period; usually on the 26th of last month
+payment_num| payment sequence number
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-delta_vat_installment|
+delta_vat_installment| VAT amount payable with respect to installment count

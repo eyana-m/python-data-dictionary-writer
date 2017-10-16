@@ -101,18 +101,18 @@ google_color_text = "000000";
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
 <td class="primaryKey" title="Primary Key">id</td>
 <td class="detail">bigserial</td>
 <td align="right" class="detail">19</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail" title="Automatically updated by the database"> √ </td>
-<td align="right" class="detail">nextval('settlement.txn_bilateral_energy_qty_monthly_prelim_id_seq'::regclass)</td>
+<td align="right" class="detail">nextval('txn_bilateral_energy_qty_monthly_prelim_id_seq'::regclass)</td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"> unique identifier</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">created_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -123,7 +123,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> author field; system-generated.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">created_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -134,7 +134,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date created field; system-generated.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">modified_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -145,7 +145,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> editor field; system-generated</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">modified_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -156,7 +156,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> last edited; system-generated</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">version</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -167,10 +167,10 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">job_id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification of a settlement processing based from settlement-ready meter data</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">run_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -200,7 +200,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date the job was run</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">bcq</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -211,7 +211,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> bilateral contract quantity</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">buyer_bilateral_adj_amt</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -222,7 +222,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> gross buyer bilateral amount (bcq * price)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">buyer_bilateral_llcc</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -233,7 +233,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> gross buyer line loss congestion costs</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="indexedColumn" title="Indexed">buyer_billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -244,7 +244,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> billing id of the bcq buyer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">dispatch_interval</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -255,7 +255,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> for SOW9: default is 5 minutes</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">fedp</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -266,7 +266,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> final energy dispatch price - from TODI eps</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">fedp_mcc</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -277,7 +277,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> marginal congestion cost  - from TODI eps</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">fedp_mlc</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -288,7 +288,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> marginal loss cost  - from TODI eps</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">fedp_mlc_mcc</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -299,7 +299,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> summation of mlc and mcc - from TODI eps</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">fedp_smp</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -310,7 +310,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> system marginal price - from TODI eps</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">llcp</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -321,7 +321,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> calculated line loss congestion pric</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">lowest_fedp_mlc_mcc</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -332,7 +332,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> lowest (mlc+mcc) by dispatch interval</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">reference_mtn</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -342,17 +342,6 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"> reference mtn. usually the same with seller_mtn</td>
-</tr>
-<tr class="even">
-<td class="detail">sein</td>
-<td class="detail">varchar</td>
-<td align="right" class="detail">255</td>
-<td align="center" class="detail"></td>
-<td align="center" class="detail"></td>
-<td class="detail"></td>
-<td class="detail"></td>
-<td class="detail"> </td>
-<td class="comment detail"> metering point</td>
 </tr>
 <tr class="odd">
 <td class="detail">seller_bilateral_adj_amt</td>
@@ -388,7 +377,7 @@ google_color_text = "000000";
 <td class="comment detail"> billing ID of seller</td>
 </tr>
 <tr class="even">
-<td class="detail">seller_mtn</td>
+<td class="indexedColumn" title="Indexed">seller_mtn</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
@@ -398,8 +387,41 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> MTN of seller</td>
 </tr>
+<tr class="odd">
+<td class="detail">region</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail"></td>
+<td align="center" class="detail"></td>
+<td class="detail"></td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"> luzon, visayas, or mindanao</td>
+</tr>
+<tr class="even">
+<td class="detail">region_group</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail"></td>
+<td align="center" class="detail"></td>
+<td class="detail"></td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"> luzon&amp;vizayas, or mindanao</td>
+</tr>
+<tr class="odd">
+<td class="detail">pricing_flag</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"> AP, SEC or OK</td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="27 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="29 columns">Table contained 29 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -420,9 +442,9 @@ google_color_text = "000000";
 <td class="constraint" style="text-align:left;">txn_bilateral_energy_qty_monthly_prelimpk</td>
 </tr>
 <tr>
-<td class="indexedColumn">dispatch_interval + seller_billing_id + buyer_billing_id</td>
+<td class="indexedColumn">dispatch_interval + seller_billing_id + buyer_billing_id + seller_mtn</td>
 <td class="detail">Must be unique</td>
-<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">uk_bilateral_energy_qty_mprelim</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></table>

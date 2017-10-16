@@ -1,11 +1,11 @@
 Field|Description
-dispatch_interval|
-mtn|
-payment_num|
-pricing_condition|
-created_by|
-created_date|
-modified_by|
-modified_date|
+dispatch_interval| for SOW9: default is 5 minutes
+mtn| market trading node involved
+payment_num| payment sequence number
+pricing_condition| AP, SEC, or MRU
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-ac_amount_installment|
+ac_amount_installment| ac amount with respect to installment

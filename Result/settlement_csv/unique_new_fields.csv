@@ -1,22 +1,22 @@
 Field|Description
 |
-is_default_billing_id|
-tp_membership_type|
-tp_facility_type|
-calc_validation|
-password|
-region_group|
-region_group_calculation|
-pricing_flag|
-delta_gmr_install|
-delta_tta_install|
-delta_vat_on_purchases_install|
-delta_vat_on_sales_install|
-delta_vatable_purchases_install|
-delta_vatable_sales_install|
-delta_withholding_tax_amt_install|
-delta_zero_rated_ecozone_install|
-delta_zero_rated_purchases_install|
-delta_zero_rated_sales_install|
-market_fee_qty|
-vat_on_reserves|
+is_default_billing_id| determines the default billing id of a trading participant with multiple billng IDs
+tp_membership_type| DIRECT or INDIRECT
+tp_facility_type| GEN OR LOAD
+calc_validation| enables/disables the checking of all dispatch intervals before gmr/vat calculation, calculation of emf or calculation of rmf
+password| password prefix used in generating password of files to be downloaded by the trading participant
+region_group| luzon&vizayas, or mindanao
+region_group_calculation| enables or disables the calculation by region group
+pricing_flag| AP, SEC or OK
+delta_gmr_install| GMR value with respect to installment count. Only used in MRU AC. 
+delta_tta_install| Total trading amount with respect to installment count. Only used in MRU AC. 
+delta_vat_on_purchases_install| VAT on purchases with respect to installment count. Only used in MRU AC.
+delta_vat_on_sales_install| VAT on sales with respect to installment count. Only used in MRU AC.
+delta_vatable_purchases_install| VATable purchases with respect to installment count. Only used in MRU AC.
+delta_vatable_sales_install| VATable sales with respect to installment count. Only used in MRU AC.
+delta_withholding_tax_amt_install| Withholding tax amount with respect to installment count. Only used in MRU AC.
+delta_zero_rated_ecozone_install| Zero-rated ecozone amount with respect to installment count. Only used in MRU AC.
+delta_zero_rated_purchases_install| Zero-rated purchases amount with respect to installment count. Only used in MRU AC.
+delta_zero_rated_sales_install| Zero-rated sales amount with respect to installment count. Only used in MRU AC.
+market_fee_qty| generated energy quantity used to compute for energy market fees
+vat_on_reserves| total value-added tax on reserve transactions

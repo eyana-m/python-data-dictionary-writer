@@ -77,7 +77,7 @@ google_color_text = "000000";
  
 </td><tr valign="top"><td align="left" class="container" valign="top">
 <a name="columns"></a>
-<br/><div><strong>Description: </strong> Contains delta values of AC data from the previous run. Installment considered.   </div> <br/> <table border="1" class="dataTable" id="columns" rules="groups">
+<br/><div><strong>Description: </strong> Contains delta values of AC data from the previous run. Only applies in MRU AC, where installment is considered. </div> <br/> <table border="1" class="dataTable" id="columns" rules="groups">
 <colgroup>
 <colgroup>
 <colgroup>
@@ -101,7 +101,7 @@ google_color_text = "000000";
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
 <td class="primaryKey" title="Primary Key">billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -112,7 +112,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification used by BSMD to identify direct participants billable to WESM</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="primaryKey" title="Primary Key">billing_period_end</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -123,7 +123,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> end date of the billing period; usually on the 25th of the current month</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="primaryKey" title="Primary Key">billing_period_start</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -134,7 +134,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> start date of the billing period; usually on the 26th of last month</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="primaryKey" title="Primary Key">payment_num</td>
 <td class="detail">int4</td>
 <td align="right" class="detail">10</td>
@@ -145,7 +145,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> payment sequence number</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">created_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -156,7 +156,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> author field; system-generated.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">created_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -167,7 +167,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date created field; system-generated.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">modified_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> editor field; system-generated</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">modified_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> last edited; system-generated</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">version</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -200,7 +200,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">delta_vat_installment</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -212,7 +212,7 @@ google_color_text = "000000";
 <td class="comment detail"> VAT amount payable with respect to installment count</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="10 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="10 columns">Table contained 40 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>

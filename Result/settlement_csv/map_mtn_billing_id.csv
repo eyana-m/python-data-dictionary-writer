@@ -1,13 +1,13 @@
 Field|Description
-id|
-created_by|
-created_date|
-modified_by|
-modified_date|
+id| unique identifier
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-mtn|
-billing_id|
+mtn| market trading node involved
+billing_id| identification used by BSMD to identify direct participants billable to WESM
 |
-effective_start_date|
-effective_end_date|
-facility_type|
+effective_start_date| start date of configuration
+effective_end_date| end date of configuration
+facility_type| gen or load

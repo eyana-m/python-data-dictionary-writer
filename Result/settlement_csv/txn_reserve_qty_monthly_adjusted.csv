@@ -1,28 +1,28 @@
 Field|Description
-id|
-created_by|
-created_date|
-modified_by|
-modified_date|
+id| unique identifier
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-group_id|
-job_id|
-run_date|
-billing_id|
-billing_tp|
-billing_tp_short_name|
-direct_participant|
-dispatch_interval|
-frdp|
-mtn|
-rbcq|
-rds|
-region|
-reserve_category|
-rsq|
-zero_rated|
-virtual_id|
-facility_type|
-region_group|
-renewable|
-withholding_tax|
+group_id| identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run
+job_id| identification of a settlement processing based from settlement-ready meter data
+run_date| date the job was run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+billing_tp| full name of trading participant
+billing_tp_short_name| short name of trading participant
+direct_participant| name of the direct participant who owns the billing ID
+dispatch_interval| for SOW9: default is 5 minutes
+frdp| final reserve dispatch price - from TODI rps
+mtn| market trading node involved
+rbcq| reserve bilateral contract price
+rds| reserve dispatch schedule
+region| luzon, visayas, or mindanao
+reserve_category| for SOW9: RU, RD, FR, FL, SR, SL, DR, DL
+rsq| reserve settlement quantity
+zero_rated| determines vatable and non-vatable participants; used in GMR/VAT.
+virtual_id| identification of direct participants in CRSS registration
+facility_type| gen or load
+region_group| luzon&vizayas, or mindanao
+renewable| determines non-renewable and renewable generators; used in GMR/VAT
+withholding_tax| determines generators with or without withholding tax; used in GMR/VAT.

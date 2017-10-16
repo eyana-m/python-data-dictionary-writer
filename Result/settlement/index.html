@@ -142,7 +142,7 @@ google_color_text = "000000";
 <td align="right" class="detail"></td>
 <td align="right" class="detail">10</td>
 <td align="right" class="detail">1</td>
-<td class="comment detail">Contains the number of MRU installments and interval on succeeding due dates. Used in additional compensation for MRU</td>
+<td class="comment detail">Contains the number of MRU installments and interval on succeeding due dates. Only applies in additional compensation for MRU</td>
 </tr>
 <tr class="tbl" valign="top"> <td class="detail"><a href="tables/cfg_mru_maintenance.html">cfg_mru_maintenance</a></td>
 <td align="right" class="detail"></td>
@@ -268,14 +268,14 @@ google_color_text = "000000";
 <td align="right" class="detail"></td>
 <td align="right" class="detail">10</td>
 <td align="right" class="detail">40</td>
-<td class="comment detail">Contains delta values of AC data from the previous run. Installment considered.  </td>
+<td class="comment detail">Contains delta values of AC data from the previous run. Only applies in MRU AC, where installment is considered.</td>
 </tr>
 <tr class="tbl" valign="top"> <td class="detail"><a href="tables/txn_delta_ac_sp_installment.html">txn_delta_ac_sp_installment</a></td>
 <td align="right" class="detail"></td>
 <td align="right" class="detail"></td>
 <td align="right" class="detail">19</td>
 <td align="right" class="detail">68</td>
-<td class="comment detail">Contains delta values of sales and purchases from previous run.</td>
+<td class="comment detail">Contains delta values of sales and purchases from previous run. Only applies in MRU AC, where installment is considered.</td>
 </tr>
 <tr class="tbl" valign="top"> <td class="detail"><a href="tables/txn_delta_addtl_comp_gmr.html">txn_delta_addtl_comp_gmr</a></td>
 <td align="right" class="detail"></td>
@@ -422,7 +422,7 @@ google_color_text = "000000";
 <td align="right" class="detail"></td>
 <td align="right" class="detail">12</td>
 <td align="right" class="detail">48</td>
-<td class="comment detail">Output workspace for additional compensation allocation. Installment considered.</td>
+<td class="comment detail">Output workspace for additional compensation allocation. Only applies in MRU AC, where installment is considered.</td>
 </tr>
 <tr class="tbl" valign="top"> <td class="detail"><a href="tables/txn_output_ac_allocation_vat.html">txn_output_ac_allocation_vat</a></td>
 <td align="right" class="detail"></td>
@@ -436,7 +436,7 @@ google_color_text = "000000";
 <td align="right" class="detail"></td>
 <td align="right" class="detail">10</td>
 <td align="right" class="detail">12</td>
-<td class="comment detail">Output workspace for new VAT amounts based on from additional compensation allocation. Installment considered.</td>
+<td class="comment detail">Output workspace for new VAT amounts based on from additional compensation allocation. Only applies in MRU AC, where installment is considered.</td>
 </tr>
 <tr class="tbl" valign="top"> <td class="detail"><a href="tables/txn_output_addtl_compensation.html">txn_output_addtl_compensation</a></td>
 <td align="right" class="detail"></td>

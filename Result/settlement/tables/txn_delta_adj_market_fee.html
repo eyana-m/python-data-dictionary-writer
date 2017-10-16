@@ -101,7 +101,7 @@ google_color_text = "000000";
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
 <td class="primaryKey" title="Primary Key">id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -112,7 +112,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> unique identifier</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">created_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -123,7 +123,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> author field; system-generated.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">created_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -134,7 +134,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date created field; system-generated.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">modified_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -145,7 +145,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> editor field; system-generated</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">modified_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -156,7 +156,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> last edited; system-generated</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">version</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -167,10 +167,10 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
-<td class="detail">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<tr class="even">
+<td class="indexedColumn" title="Indexed">group_id</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">job_id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification of a settlement processing based from settlement-ready meter data</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">run_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -200,8 +200,8 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date the job was run</td>
 </tr>
-<tr class="even">
-<td class="detail">billing_id</td>
+<tr class="odd">
+<td class="indexedColumn" title="Indexed">billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
 <td align="center" class="detail" title="nullable"> √ </td>
@@ -211,8 +211,8 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification used by BSMD to identify direct participants billable to WESM</td>
 </tr>
-<tr class="odd">
-<td class="detail">billing_period_end</td>
+<tr class="even">
+<td class="indexedColumn" title="Indexed">billing_period_end</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
 <td align="center" class="detail"></td>
@@ -222,8 +222,8 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> end date of the billing period; usually on the 25th of the current month</td>
 </tr>
-<tr class="even">
-<td class="detail">billing_period_start</td>
+<tr class="odd">
+<td class="indexedColumn" title="Indexed">billing_period_start</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
 <td align="center" class="detail"></td>
@@ -233,7 +233,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> start date of the billing period; usually on the 26th of last month</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">amount</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -244,7 +244,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> equivalent amount with respect to set price and quantity</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">charge_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -255,7 +255,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification for each settlement or billing calculation; used in AMS INV and MF files.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">mf_rate</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -266,7 +266,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> market fee rate</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">quantity</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -278,7 +278,7 @@ google_color_text = "000000";
 <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="16 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="16 columns">Table contained 51 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -297,6 +297,12 @@ google_color_text = "000000";
 <td class="detail">Primary key</td>
 <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">txn_delta_adj_market_feepk</td>
+</tr>
+<tr>
+<td class="indexedColumn">billing_period_start + billing_period_end + group_id + billing_id</td>
+<td class="detail">Performance</td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="constraint" style="text-align:left;">idx_delta_adj_market_fee</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></table>
 </div>

@@ -1,22 +1,22 @@
 Field|Description
-id|
-created_by|
-created_date|
-modified_by|
-modified_date|
+id| unique identifier
+created_by| author field; system-generated.
+created_date| date created field; system-generated.
+modified_by| editor field; system-generated
+modified_date| last edited; system-generated
 version|
-ac_group_id|
-billing_id|
-billing_period_end|
-billing_period_start|
-gmr|
-run_date|
-tta|
-vat_on_purchases|
-vat_on_sales|
-vatable_purchases|
-vatable_sales|
-withholding_tax_amt|
-zero_rated_ecozone|
-zero_rated_purchases|
-zero_rated_sales|
+ac_group_id| group id of additional compensation run
+billing_id| identification used by BSMD to identify direct participants billable to WESM
+billing_period_end| end date of the billing period; usually on the 25th of the current month
+billing_period_start| start date of the billing period; usually on the 26th of last month
+gmr| generation mix ratio
+run_date| date the job was run
+tta| total trading amount
+vat_on_purchases| vat on purchases
+vat_on_sales| vat on sales
+vatable_purchases| vatable purchases
+vatable_sales| vatable sales
+withholding_tax_amt| withholding tax amount
+zero_rated_ecozone| zero-rated sales on ecozones
+zero_rated_purchases| zero-rated purchases
+zero_rated_sales| zero-rated sales

@@ -101,18 +101,18 @@ google_color_text = "000000";
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
 <td class="primaryKey" title="Primary Key">id</td>
 <td class="detail">bigserial</td>
 <td align="right" class="detail">19</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail" title="Automatically updated by the database"> √ </td>
-<td align="right" class="detail">nextval('settlement.txn_output_ready_process_disagg_bcq_monthly_prelim_id_seq'::regclass)</td>
+<td align="right" class="detail">nextval('txn_output_ready_process_disagg_bcq_monthly_prelim_id_seq'::regclass)</td>
 <td class="detail"></td>
 <td class="detail"> </td>
 <td class="comment detail"> unique identifier</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">created_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -123,7 +123,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> author field; system-generated.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">created_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -134,7 +134,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date created field; system-generated.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">modified_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -145,7 +145,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> editor field; system-generated</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">modified_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -156,7 +156,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> last edited; system-generated</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">version</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -167,10 +167,10 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">group_id</td>
-<td class="detail">int8</td>
-<td align="right" class="detail">19</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
 <td align="center" class="detail"></td>
 <td class="detail"></td>
@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification of a settlement processing based on settlement trigger; one job_id can incur multiple group_ids with adjustment run</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">job_id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> identification of a settlement processing based from settlement-ready meter data</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">run_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -200,7 +200,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date the job was run</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">bcq</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -211,7 +211,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> bilateral contract quantity</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">buyer_billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -222,7 +222,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> billing id of the bcq buyer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">buying_bcq</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -233,7 +233,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> bilateral contract quantity availed by the buyer bought by</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">buying_fedp</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -244,7 +244,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> purchase price</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">buying_lr</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -255,7 +255,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> line rental of buyer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">buying_mtn</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -266,7 +266,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> MTN of buyer</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="indexedColumn" title="Indexed">buying_sein</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -277,7 +277,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> metering point of buyer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">dispatch_interval</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -288,7 +288,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> for SOW9: default is 5 minutes</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">ref_fedp</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -299,7 +299,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> reference fedp</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">reference_mtn</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -310,7 +310,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> reference mtn. usually the same with seller_mtn</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="indexedColumn" title="Indexed">seller_billing_id</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -321,8 +321,8 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> billing ID of seller</td>
 </tr>
-<tr class="odd">
-<td class="detail">seller_mtn</td>
+<tr class="even">
+<td class="indexedColumn" title="Indexed">seller_mtn</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
 <td align="center" class="detail"></td>
@@ -332,7 +332,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> MTN of seller</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">selling_bcq</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -343,7 +343,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> bilateral contract quantity offered by the seller</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">selling_fedp</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -354,7 +354,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> selling price</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">selling_lr</td>
 <td class="detail">numeric</td>
 <td align="right" class="detail">23,11</td>
@@ -366,7 +366,7 @@ google_color_text = "000000";
 <td class="comment detail"> line rental of sellers (generators)</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="24 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="24 columns">Table contained 92 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -387,9 +387,9 @@ google_color_text = "000000";
 <td class="constraint" style="text-align:left;">txn_output_ready_process_disagg_bcq_monthly_prelimpk</td>
 </tr>
 <tr>
-<td class="indexedColumn">dispatch_interval + seller_billing_id + buyer_billing_id + buying_sein</td>
+<td class="indexedColumn">dispatch_interval + seller_billing_id + buyer_billing_id + buying_sein + seller_mtn</td>
 <td class="detail">Must be unique</td>
-<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">uk_or_process_disagg_bcq_mprelim</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></table>

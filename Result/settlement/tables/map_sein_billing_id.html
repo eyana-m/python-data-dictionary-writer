@@ -101,7 +101,7 @@ google_color_text = "000000";
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
 <td class="primaryKey" title="Primary Key">id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -112,7 +112,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> unique identifier</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">created_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -123,7 +123,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> author field; system-generated.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">created_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -134,7 +134,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> date created field; system-generated.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">modified_by</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">100</td>
@@ -145,7 +145,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> editor field; system-generated</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">modified_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -156,7 +156,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> last edited; system-generated</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="detail">version</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
@@ -167,7 +167,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="detail">effective_end_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -178,7 +178,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> end date of configuration</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="indexedColumn" title="Indexed">effective_start_date</td>
 <td class="detail">timestamp</td>
 <td align="right" class="detail">29,6</td>
@@ -189,7 +189,7 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> start date of configuration</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="indexedColumn" title="Indexed">sein</td>
 <td class="detail">varchar</td>
 <td align="right" class="detail">255</td>
@@ -200,8 +200,8 @@ google_color_text = "000000";
 <td class="detail"> </td>
 <td class="comment detail"> metering point</td>
 </tr>
-<tr class="even">
-<td class="detail">billing_id</td>
+<tr class="odd">
+<td class="indexedColumn" title="Indexed">billing_id</td>
 <td class="detail">int8</td>
 <td align="right" class="detail">19</td>
 <td align="center" class="detail"></td>
@@ -210,7 +210,7 @@ google_color_text = "000000";
 <td class="detail"></td>
 <td class="detail">
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tr class="relative even" valign="top">
+<tr class="relative odd" valign="top">
 <td class="relatedTable detail" title="map_sein_billing_id.billing_id refs cfg_billing_id.id via fkn0dh5k1dpl3lya0cp81wtm2il"><a href="cfg_billing_id.html">cfg_billing_id</a><span class="relatedKey">.id</span>
 </td>
 <td class="constraint detail">fkn0dh5k1dpl3lya0cp81wtm2il<span title="Restrict delete:
@@ -220,8 +220,19 @@ google_color_text = "000000";
 </td>
 <td class="comment detail"> identification used by BSMD to identify direct participants billable to WESM</td>
 </tr>
+<tr class="even">
+<td class="detail">tp_short_name</td>
+<td class="detail">varchar</td>
+<td align="right" class="detail">255</td>
+<td align="center" class="detail" title="nullable"> √ </td>
+<td align="center" class="detail"></td>
+<td align="right" class="detail">null</td>
+<td class="detail"></td>
+<td class="detail"> </td>
+<td class="comment detail"> short name of the trading participant associated with the billing ID (could be direct or indirect); inputted by the user</td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="10 columns">Table contained 0 rows at Tue Jun 27 11:05 PHT 2017<p></p>
+<p title="11 columns">Table contained 85 rows at Mon Oct 16 11:28 PHT 2017<p></p>
 </p></td></tr></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -242,7 +253,19 @@ google_color_text = "000000";
 <td class="constraint" style="text-align:left;">map_sein_billing_idpk</td>
 </tr>
 <tr>
-<td class="indexedColumn">effective_start_date + sein</td>
+<td class="indexedColumn">effective_start_date + sein + billing_id</td>
+<td class="detail">Must be unique</td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="constraint" style="text-align:left;">map_sein_billing_id_effective_start_date_sein_billing_id_idx</td>
+</tr>
+<tr>
+<td class="indexedColumn">sein + effective_start_date</td>
+<td class="detail">Must be unique</td>
+<td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+<td class="constraint" style="text-align:left;">map_sein_billing_id_sein_effective_start_date_idx</td>
+</tr>
+<tr>
+<td class="indexedColumn">sein + effective_start_date</td>
 <td class="detail">Must be unique</td>
 <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
 <td class="constraint" style="text-align:left;">uk_map_sein_billing_id</td>
@@ -250,11 +273,19 @@ google_color_text = "000000";
 </tbody></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table border="0" width="100%"><tr><td class="container">
-<br/><form action="get"><b>Close relationships:</b></form><map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area alt="" coords="207,5,481,294" href="map_sein_billing_id.html" id="node1" shape="rect" title="map_sein_billing_id"/>
-<area alt="" coords="5,213,163,656" href="cfg_billing_id.html" id="node2" shape="rect" title="cfg_billing_id"/>
+<br/><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from map_sein_billing_id">
+ within <label for="oneDegree"><input checked="" id="oneDegree" name="degrees" type="radio"/>one</label> <label for="twoDegrees"><input id="twoDegrees" name="degrees" type="radio"/>two degrees</label> of separation</span><b>:</b></form>
+<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area alt="" coords="217,5,492,317" href="map_sein_billing_id.html" id="node1" shape="rect" title="map_sein_billing_id"/>
+<area alt="" coords="6,213,173,723" href="cfg_billing_id.html" id="node2" shape="rect" title="cfg_billing_id"/>
 </map>
 <a name="diagram"><img align="left" alt="" border="0" class="diagram" id="oneDegreeImg" src="../diagrams/map_sein_billing_id.1degree.png" usemap="#oneDegreeRelationshipsDiagram"/></a>
+<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area alt="" coords="277,5,433,85" href="map_mtn_billing_id.html" id="node1" shape="rect" title="map_mtn_billing_id"/>
+<area alt="" coords="6,158,173,669" href="cfg_billing_id.html" id="node2" shape="rect" title="cfg_billing_id"/>
+<area alt="" coords="217,103,492,415" href="map_sein_billing_id.html" id="node3" shape="rect" title="map_sein_billing_id"/>
+</map>
+<a name="diagram"><img align="left" alt="" border="0" class="diagram" id="twoDegreesImg" src="../diagrams/map_sein_billing_id.2degrees.png" usemap="#twoDegreesRelationshipsDiagram"/></a>
 </td></tr></table>
 </div>
 </body>

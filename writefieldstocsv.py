@@ -23,13 +23,19 @@ def retrieveFields(path):
     return fields
 
 def getUniqueField(field):
-    with open("Result/settlement_csv/unique_fields.csv", "r") as f: 
-        reader = csv.reader(f,delimiter="|")
+    with open("Result/settlement_csv/unique_fields-sow9.csv", "r") as sow9, open("Result/settlement_csv/unique_new_fields.csv", "r") as sow10: 
+        reader = csv.reader(sow9,delimiter="|")
+        reader2 = csv.reader(sow10,delimiter="|")
         for row in reader:
         	if row[0]==field:
         		return row[1]
         	else:
         		continue
+        for row in reader2:
+            if row[0]==field:
+                return row[1]
+            else:
+                continue            
         return None
 
 
