@@ -30,7 +30,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 **Release 1 - Settlement SOW9 (July 2017)**
 
 
-![Release 1](/Screenshots/fc-r1.png  | height=350)
+<img src="/Screenshots/fc-r1.png" alt="Release 1" height="350">
 
 
 
