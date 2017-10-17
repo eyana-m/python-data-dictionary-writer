@@ -5,7 +5,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 ## Why did I write this script?
 * To automate my process of inserting descriptions for multiple tables and fields in the data dictionary.
-* I also want to optimize my workflow in writing the descriptions for all 2,862 fields by retrieving the unique fields instead.
+* I also want to optimize my workflow in writing the descriptions for more than a thousand fields by retrieving the unique fields instead.
 
 ## What can the scripts do?
 
