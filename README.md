@@ -4,7 +4,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 **Keywords:** Python, Web scraping, CSV, HTML, automation
 
 ## Why did I write this script?
-* To automate my process of inserting descriptions for 139 tables and 2,862 fields in the data dictionary.
+* To automate my process of inserting descriptions for multiple tables and fields in the data dictionary.
 * I also want to optimize my workflow in writing the descriptions for all 2,862 fields by retrieving the unique fields instead.
 
 ## What can the scripts do?
@@ -24,6 +24,26 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 ![Table After](/Screenshots/table-after.png)
 <small>*Resulting cfg_billing_id.html with its table description (same with the index) and field descriptions*</small>
 <br><br>
+
+## Releases
+
+**Release 1 - Settlement SOW9 (July 2017)**
+
+![Release 1](/Screenshots/fc-r1.png)
+
+Date: July 13, 2017
+Table Count: 139
+Field Count: 2,862
+Note: Forgot to publish release (Sorry!)
+
+**Release 2 - Settlement SOW10 (October 2017)**
+
+![Release 2](/Screenshots/fc-r2.png)
+
+Date: October 16, 2017  
+Table Count: 186  
+Field Count: 4,066  
+Note: Applied web scrapping to new tables and fields
 
 
 
