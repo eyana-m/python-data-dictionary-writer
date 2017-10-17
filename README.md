@@ -29,12 +29,15 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 **Release 1 - Settlement SOW9 (July 2017)**
 
-![Release 1](/Screenshots/fc-r1.png)
+![Release 1](/Screenshots/fc-r1.png =250x)
 
-Date: July 13, 2017
-Table Count: 139
-Field Count: 2,862
-Note: Forgot to publish release (Sorry!)
+<img src="/Screenshots/fc-r1.png" alt="Drawing" style="height: 200px;"/>
+
+
+* Date: July 13, 2017
+* Table Count: 139
+* Field Count: 2,862
+* Note: Forgot to publish release (Sorry!)
 
 **Release 2 - Settlement SOW10 (October 2017)**
 
