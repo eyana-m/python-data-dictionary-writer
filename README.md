@@ -30,8 +30,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 **Release 1 - Settlement SOW9 (July 2017)**
 
 
-<img src="/Screenshots/fc-r1.png" alt="Release 1" height="450px">
-
+<img src="/Screenshots/fc-r1.png" alt="Release 1" height="800px">
 
 
 * Date: July 13, 2017
@@ -41,7 +40,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 **Release 2 - Settlement SOW10 (October 2017)**
 
-<img src="/Screenshots/fc-r2.png" alt="Release 2" height="450px">
+<img src="/Screenshots/fc-r2.png" alt="Release 2" height="800px">
 
 
 * Date: October 16, 2017  
