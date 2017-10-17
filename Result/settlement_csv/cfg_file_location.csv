@@ -1,9 +1,0 @@
-Field|Description
-id| unique identifier
-created_by| author field; system-generated.
-created_date| date created field; system-generated.
-modified_by| editor field; system-generated
-modified_date| last edited; system-generated
-version|
-name| region name
-value|
