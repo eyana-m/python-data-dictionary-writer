@@ -30,7 +30,8 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 **Release 1 - Settlement SOW9 (July 2017)**
 
 
-<img src="/Screenshots/fc-r1.png" style="height: 400px;">
+![Release 1](/Screenshots/fc-r1.png  | height=350)
+
 
 
 * Date: July 13, 2017
@@ -40,7 +41,7 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 **Release 2 - Settlement SOW10 (October 2017)**
 
-![Release 2](/Screenshots/fc-r2.png)
+![Release 2](/Screenshots/fc-r2.png | height=350)
 
 Date: October 16, 2017  
 Table Count: 186  
