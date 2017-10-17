@@ -29,9 +29,8 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 **Release 1 - Settlement SOW9 (July 2017)**
 
-![Release 1](/Screenshots/fc-r1.png =250x)
 
-<img src="/Screenshots/fc-r1.png" alt="Drawing" style="height: 200px;"/>
+<img src="/Screenshots/fc-r1.png" style="height: 400px;">
 
 
 * Date: July 13, 2017
