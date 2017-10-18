@@ -41,8 +41,15 @@ python setup.py install
 
 ```
 sudo pip install pathlib
-
 ```
+
+4. Add Schemaspy folder to `Data` folder. 
+
+5. [For Settlement] `Result` folder should have the folowing subfolders: 
+
+* settlement
+* settlement_csv
+* settlement_table_desc
 
 ## Releases
 
