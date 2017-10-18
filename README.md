@@ -26,16 +26,18 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 <br><br>
 
 
-## Prerequisites
+## <a name="prerequisites"></a>Prerequisites
 
-1. Install [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/). 
+1. Install [pip](https://pypi.python.org/pypi/pip). [How to install in mac](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)
+
+2. Install [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/). 
 
 ```
 cd beautifulsoup4-4.6.0
 python setup.py install 
 ```
 
-2. Install [Pathlib](https://docs.python.org/3/library/pathlib.html)
+3. Install [Pathlib](https://docs.python.org/3/library/pathlib.html)
 
 ```
 sudo pip install pathlib
@@ -44,7 +46,7 @@ sudo pip install pathlib
 
 ## Releases
 
-**Release 1 - Settlement SOW9 (July 2017)**
+#### Release 1 - Settlement SOW9 (July 2017)
 
 
 <img src="/Screenshots/fc-r1.png" alt="Release 1" height="800px">
@@ -55,7 +57,20 @@ sudo pip install pathlib
 * Field Count: 2,862
 * Note: Forgot to publish release (Sorry!)
 
-**Release 2 - Settlement SOW10 (October 2017)**
+
+##### Release 1 Workflow
+
+0. Complete [Prerequisites](#prerequisites)
+1. Export table list to CSV (c/o Google Sheets)
+2. Update table descriptions of index and table pages using `writetabledescriptiontohtml.py`
+3. If no fields yet:
+   * Retrieve and save all unique fields to CSV using `retrieveuniquefields.py`
+   * Write fields and field descriptions to CSV using `writefieldstocsv.py`
+4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writefielddescriptionstohtml.py`
+
+
+
+#### Release 2 - Settlement SOW10 (October 2017)
 
 <img src="/Screenshots/fc-r2.png" alt="Release 2" height="800px">
 
@@ -66,15 +81,18 @@ sudo pip install pathlib
 * Note: Applied web scrapping to new tables and fields
 
 
+##### Release 2 Workflow
 
-## Quick Start
+0. Complete [Prerequisites](#prerequisites)
+1. Export table list with descriptions to CSV (c/o Google Sheets)
+2. Update table descriptions of index and table pages using `writeTableDescriptiontoHTML.py`
+3. If no more fields yet: 
+   * Retain SOW9 unique fields `unique_fields-sow9.csv`
+   * Retrieve all new SOW10 fields to CSV using `retrievenewfields.py`
+   * Write SOW9 and SOW10 fields to CSV using `writeFieldsToCSV.py`
+4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writeFieldDescriptionsToHTML.py`
 
-1. Export table list to CSV (c/o Google Sheets)
-2. Update table descriptions of index and table pages using `writetabledescriptiontohtml.py`
-3. If no fields yet:
-   * Retrieve and save all unique fields to CSV using `retrieveuniquefields.py`
-   * Write fields and field descriptions to CSV using `writefieldstocsv.py`
-4. If field descriptions are complete in CSV: Update field descriptions of all tables using `writefielddescriptionstohtml.py`
+
 
 ## TL;DR version: How to use these scripts?
 

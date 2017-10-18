@@ -1,0 +1,41 @@
+// dot 2.36.0 on Mac OS X 10.12.6
+// SchemaSpy rev 590
+digraph "txn_output_ac_allocation_installment" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "txn_output_ac_allocation_installment" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">txn_output_ac_allocation_installment</TD></TR>
+      <TR><TD PORT="ac_mtn" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ac_mtn</TD></TR>
+      <TR><TD PORT="dispatch_interval" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">dispatch_interval</TD></TR>
+      <TR><TD PORT="mtn" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">mtn</TD></TR>
+      <TR><TD PORT="payment_num" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">payment_num</TD></TR>
+      <TR><TD PORT="pricing_condition" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">pricing_condition</TD></TR>
+      <TR><TD PORT="sein" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">sein</TD></TR>
+      <TR><TD PORT="created_by" COLSPAN="3" ALIGN="LEFT">created_by</TD></TR>
+      <TR><TD PORT="created_date" COLSPAN="3" ALIGN="LEFT">created_date</TD></TR>
+      <TR><TD PORT="modified_by" COLSPAN="3" ALIGN="LEFT">modified_by</TD></TR>
+      <TR><TD PORT="modified_date" COLSPAN="3" ALIGN="LEFT">modified_date</TD></TR>
+      <TR><TD PORT="version" COLSPAN="3" ALIGN="LEFT">version</TD></TR>
+      <TR><TD PORT="allocation_amount_installment" COLSPAN="3" ALIGN="LEFT">allocation_amount_installment</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">48 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/txn_output_ac_allocation_installment.html"
+    tooltip="txn_output_ac_allocation_installment"
+  ];
+}
