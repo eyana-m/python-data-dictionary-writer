@@ -25,6 +25,25 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 <small>*Resulting cfg_billing_id.html with its table description (same with the index) and field descriptions*</small>
 <br><br>
 
+
+## Prerequisites
+
+1. Install [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/). 
+
+Go to Beautifulsoup folder, and 
+
+```
+cd beautifulsoup4-4.6.0
+python setup.py install 
+```
+
+2. Install [Pathlib](https://docs.python.org/3/library/pathlib.html)
+
+```
+sudo pip install pathlib
+
+```
+
 ## Releases
 
 **Release 1 - Settlement SOW9 (July 2017)**
