@@ -30,8 +30,6 @@ Add custom html elements in [SchemaSpy](http://schemaspy.sourceforge.net/) pages
 
 1. Install [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/). 
 
-Go to Beautifulsoup folder, and 
-
 ```
 cd beautifulsoup4-4.6.0
 python setup.py install 
